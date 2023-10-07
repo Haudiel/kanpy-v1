@@ -42,6 +42,8 @@ class MainWindow(QMainWindow):
         global widgets
         widgets = self.ui
 
+        self.selected_item = None
+
         # USE CUSTOM TITLE BAR | USE AS "False" FOR MAC OR LINUX
         # ///////////////////////////////////////////////////////////////
         Settings.ENABLE_CUSTOM_TITLE_BAR = True
@@ -90,6 +92,10 @@ class MainWindow(QMainWindow):
         widgets.aceptar_btn.clicked.connect(self.consultar_BD)
         widgets.motrec_btn.setVisible(False)
         widgets.motrec_btn.clicked.connect(self.buttonClick)
+        widgets.vehiculos_tbl.setVisible(False)
+        widgets.cheklist_btn.clicked.connect(self.buttonClick)
+        widgets.cheklist_btn.clicked.connect(self.obtener_checklist)
+        widgets.cheklist_btn.setVisible(False)
 
         # LABEL CONEXION
         network_status = "Online" if psutil.net_if_stats().get("Wi-Fi") else "Offline"
@@ -98,6 +104,8 @@ class MainWindow(QMainWindow):
         # LABEL BATERIA
         bateria = self.obtener_estado_bateria()
         widgets.bateria_lbl.setText(f"Bateria: {bateria}")
+
+        widgets.vehiculos_tbl.itemClicked.connect(self.guardar_itemSelected)
 
         # EXTRA LEFT BOX
         def openCloseLeftBox():
@@ -159,6 +167,9 @@ class MainWindow(QMainWindow):
             UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
 
+        if btnName == "cheklist_btn":
+            widgets.stackedWidget.setCurrentWidget(widgets.checklist_page)
+
         if btnName.startswith("num_btn"):
             # Extract the number from the button's name
             number = btnName.split("_")[-1]
@@ -213,7 +224,9 @@ class MainWindow(QMainWindow):
                     if not pixmap.isNull():
                         widgets.photo_lbl.setPixmap(pixmap)
                         widgets.photo_lbl.setScaledContents(True)
+
                         widgets.motrec_btn.setVisible(True)
+                        widgets.vehiculos_tbl.setVisible(True)
                     else:
                         QMessageBox.warning(self, "Resultado de la Consulta",
                                             f"El empleado {empleado_id} tiene datos de imagen no válidos.")
@@ -284,6 +297,55 @@ class MainWindow(QMainWindow):
                 return f'La batería está al {percent}%'
         else:
             return '100%'
+
+    def guardar_itemSelected(self, item):
+        # Verificar si el elemento es un QTableWidgetItem
+        if isinstance(item, QTableWidgetItem):
+            # Guardar el elemento seleccionado en la variable
+            self.selected_item = item.text()
+            print(f'Elemento seleccionado: {self.selected_item}')
+
+            # Habilitar el botón checklist_btn
+            widgets.cheklist_btn.setVisible(True)
+        else:
+            # No se seleccionó ningún elemento, deshabilitar el botón
+            widgets.cheklist_btn.setVisible(False)
+
+    def obtener_checklist(self):
+        server = '172.19.128.18'
+        database = 'MasterLabel'
+        username = 'sa'
+        password = 'PhyTo2k3'
+
+        try:
+            conn = pyodbc.connect(
+                f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password}')
+            cursor = conn.cursor()
+            consulta = "SELECT pregunta FROM ChecklistVehiculosPreguntas"
+            cursor.execute(consulta)
+            resultado = cursor.fetchall()
+
+            conn.close()
+
+            for i, pregunta in enumerate(resultado):
+                label_name = f"pregunta_{i + 1}"
+                label_widget = getattr(widgets, label_name, None)
+                if label_widget:
+                    label_widget.setText(pregunta[0].replace("\n", " ").replace("\r", " "))
+
+        except Exception as e:
+            print(f"Ocurrió un error: {str(e)}")
+
+    def respuesta_seleccionada(self):
+        sender = self.sender()
+        group_name = sender.objectName()  # Nombre del grupo de botones (por ejemplo, "Q1", "Q2", ...)
+        respuesta = sender.text()
+        self.respuestas[group_name] = respuesta
+
+    def comprobar_respuestas(self):
+        for pregunta, respuesta in self.respuestas.items():
+            pregunta_numero = pregunta.split("Q")[1]
+            print(f"Pregunta {pregunta_numero}: Respuesta seleccionada: {respuesta}")
 
     # RESIZE EVENTS
     # ///////////////////////////////////////////////////////////////

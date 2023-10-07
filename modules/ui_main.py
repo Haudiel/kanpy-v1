@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'main.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.5.2
+## Created by: Qt User Interface Compiler version 6.5.3
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -18,8 +18,13 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(940, 650)
-        MainWindow.setMinimumSize(QSize(940, 650))
+        MainWindow.resize(1100, 733)
+        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
+        MainWindow.setMinimumSize(QSize(1100, 700))
         self.styleSheet = QWidget(MainWindow)
         self.styleSheet.setObjectName(u"styleSheet")
         font = QFont()
@@ -50,7 +55,7 @@ class Ui_MainWindow(object):
 "	background-position: left center;\n"
 "    background-repeat: no-repeat;\n"
 "	border: none;\n"
-"	border-left: 2px solid rgb(255, 121, 198);\n"
+"	border-left: 2px solid #6272a4;\n"
 "	text-align: left;\n"
 "	padding-left: 8px;\n"
 "	margin: 0px;\n"
@@ -58,15 +63,15 @@ class Ui_MainWindow(object):
 "\n"
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
 "Bg App */\n"
-"#bgApp {	\n"
-"	background"
-                        "-color: rgb(40, 44, 52);\n"
+"#bgApp {\n"
+"	background-color: rgb("
+                        "40, 44, 52);\n"
 "	border: 1px solid rgb(44, 49, 58);\n"
 "}\n"
 "\n"
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
 "Left Menu */\n"
-"#leftMenuBg {	\n"
+"#leftMenuBg {\n"
 "	background-color: rgb(33, 37, 43);\n"
 "}\n"
 "#topLogo {\n"
@@ -76,10 +81,10 @@ class Ui_MainWindow(object):
 "	background-repeat: no-repeat;\n"
 "}\n"
 "#titleLeftApp { font: 63 12pt \"Segoe UI Semibold\"; }\n"
-"#titleLeftDescription { font: 8pt \"Segoe UI\"; color: rgb(189, 147, 249); }\n"
+"#titleLeftDescription { font: 8pt \"Segoe UI\"; color: #6272a4; }\n"
 "\n"
 "/* MENUS */\n"
-"#topMenu .QPushButton {	\n"
+"#topMenu .QPushButton {\n"
 "	background-position: left center;\n"
 "    background-repeat: no-repeat;\n"
 "	border: none;\n"
@@ -91,12 +96,12 @@ class Ui_MainWindow(object):
 "#topMenu .QPushButton:hover {\n"
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
-"#topMenu .QPushButton:pressed {	\n"
-"	background-color: rgb(189,"
-                        " 147, 249);\n"
-"	color: rgb(255, 255, 255);\n"
+"#topMenu .QPushButton:pressed {\n"
+"	background-color: #6272a4;\n"
+"	color: rgb(255, 255,"
+                        " 255);\n"
 "}\n"
-"#bottomMenu .QPushButton {	\n"
+"#bottomMenu .QPushButton {\n"
 "	background-position: left center;\n"
 "    background-repeat: no-repeat;\n"
 "	border: none;\n"
@@ -108,8 +113,8 @@ class Ui_MainWindow(object):
 "#bottomMenu .QPushButton:hover {\n"
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
-"#bottomMenu .QPushButton:pressed {	\n"
-"	background-color: rgb(189, 147, 249);\n"
+"#bottomMenu .QPushButton:pressed {\n"
+"	background-color: #6272a4;\n"
 "	color: rgb(255, 255, 255);\n"
 "}\n"
 "#leftMenuFrame{\n"
@@ -131,21 +136,21 @@ class Ui_MainWindow(object):
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
 "#toggleButton:pressed {\n"
-"	background-color: rgb(18"
-                        "9, 147, 249);\n"
+"	background-color: #6272a4;\n"
 "}\n"
 "\n"
 "/* Title Menu */\n"
-"#titleRightInfo { padding-left: 10px; }\n"
+"#titleRight"
+                        "Info { padding-left: 10px; }\n"
 "\n"
 "\n"
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
 "Extra Tab */\n"
-"#extraLeftBox {	\n"
+"#extraLeftBox {\n"
 "	background-color: rgb(44, 49, 58);\n"
 "}\n"
-"#extraTopBg{	\n"
-"	background-color: rgb(189, 147, 249)\n"
+"#extraTopBg{\n"
+"	background-color: #6272a4\n"
 "}\n"
 "\n"
 "/* Icon */\n"
@@ -165,12 +170,12 @@ class Ui_MainWindow(object):
 "\n"
 "/* Extra Content */\n"
 "#extraContent{\n"
-"	border-t"
-                        "op: 3px solid rgb(40, 44, 52);\n"
+"	border-top: 3px solid rgb(40, 44, 52);\n"
 "}\n"
 "\n"
 "/* Extra Top Menus */\n"
-"#extraTopMenu .QPushButton {\n"
+"#e"
+                        "xtraTopMenu .QPushButton {\n"
 "background-position: left center;\n"
 "    background-repeat: no-repeat;\n"
 "	border: none;\n"
@@ -182,14 +187,14 @@ class Ui_MainWindow(object):
 "#extraTopMenu .QPushButton:hover {\n"
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
-"#extraTopMenu .QPushButton:pressed {	\n"
-"	background-color: rgb(189, 147, 249);\n"
+"#extraTopMenu .QPushButton:pressed {\n"
+"	background-color: #6272a4;\n"
 "	color: rgb(255, 255, 255);\n"
 "}\n"
 "\n"
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
 "Content App */\n"
-"#contentTopBg{	\n"
+"#contentTopBg{\n"
 "	background-color: rgb(33, 37, 43);\n"
 "}\n"
 "#contentBottom{\n"
@@ -198,13 +203,13 @@ class Ui_MainWindow(object):
 "\n"
 "/* Top Buttons */\n"
 "#rightButtons .QPushButton { background-color: rgba(255, 255, 255, 0); border: none;  border-radius: 5px; }\n"
-"#rightButtons .QPushButton:hover { background-color: rgb(44, 49, 57); border-style"
-                        ": solid; border-radius: 4px; }\n"
-"#rightButtons .QPushButton:pressed { background-color: rgb(23, 26, 30); border-style: solid; border-radius: 4px; }\n"
+"#rightButtons .QPushButton:hover { background-color: rgb(44, 49, 57); border-style: solid; border-radius: 4px; }\n"
+"#rightButtons .QPushButton:pressed { background-colo"
+                        "r: rgb(23, 26, 30); border-style: solid; border-radius: 4px; }\n"
 "\n"
 "/* Theme Settings */\n"
 "#extraRightBox { background-color: rgb(44, 49, 58); }\n"
-"#themeSettingsTopDetail { background-color: rgb(189, 147, 249); }\n"
+"#themeSettingsTopDetail { background-color: #6272a4; }\n"
 "\n"
 "/* Bottom Bar */\n"
 "#bottomBar { background-color: rgb(44, 49, 58); }\n"
@@ -212,7 +217,7 @@ class Ui_MainWindow(object):
 "\n"
 "/* CONTENT SETTINGS */\n"
 "/* MENUS */\n"
-"#contentSettings .QPushButton {	\n"
+"#contentSettings .QPushButton {\n"
 "	background-position: left center;\n"
 "    background-repeat: no-repeat;\n"
 "	border: none;\n"
@@ -224,15 +229,15 @@ class Ui_MainWindow(object):
 "#contentSettings .QPushButton:hover {\n"
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
-"#contentSettings .QPushButton:pressed {	\n"
-"	background-color: rgb(189, 147, 249);\n"
-"	color: rgb(2"
-                        "55, 255, 255);\n"
+"#contentSettings .QPushButton:pressed {\n"
+"	background-color: #6272a4;\n"
+"	color: rgb(255, 255, 255);\n"
 "}\n"
 "\n"
-"/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
+"/* //////////////////////////////////////////////////////////////////////////////"
+                        "///////////////////\n"
 "QTableWidget */\n"
-"QTableWidget {	\n"
+"QTableWidget {\n"
 "	background-color: transparent;\n"
 "	padding: 10px;\n"
 "	border-radius: 5px;\n"
@@ -246,7 +251,7 @@ class Ui_MainWindow(object):
 "	gridline-color: rgb(44, 49, 60);\n"
 "}\n"
 "QTableWidget::item:selected{\n"
-"	background-color: rgb(189, 147, 249);\n"
+"	background-color: #6272a4;\n"
 "}\n"
 "QHeaderView::section{\n"
 "	background-color: rgb(33, 37, 43);\n"
@@ -256,19 +261,19 @@ class Ui_MainWindow(object):
 "    border-bottom: 1px solid rgb(44, 49, 60);\n"
 "    border-right: 1px solid rgb(44, 49, 60);\n"
 "}\n"
-"QTableWidget::horizontalHeader {	\n"
+"QTableWidget::horizontalHeader {\n"
 "	background-color: rgb(33, 37, 43);\n"
 "}\n"
 "QHeaderView::section:horizontal\n"
 "{\n"
 "    border: 1px solid rgb(33, 37, 43);\n"
-"	background-colo"
-                        "r: rgb(33, 37, 43);\n"
+"	background-color: rgb(33, 37, 43);\n"
 "	padding: 3px;\n"
 "	border-top-left-radius: 7px;\n"
 "    border-top-right-radius: 7px;\n"
 "}\n"
-"QHeaderView::section:vertical\n"
+"QHe"
+                        "aderView::section:vertical\n"
 "{\n"
 "    border: 1px solid rgb(44, 49, 60);\n"
 "}\n"
@@ -281,7 +286,7 @@ class Ui_MainWindow(object):
 "	border: 2px solid rgb(33, 37, 43);\n"
 "	padding-left: 10px;\n"
 "	selection-color: rgb(255, 255, 255);\n"
-"	selection-background-color: rgb(255, 121, 198);\n"
+"	selection-background-color: #6272a4;\n"
 "}\n"
 "QLineEdit:hover {\n"
 "	border: 2px solid rgb(64, 71, 88);\n"
@@ -297,14 +302,14 @@ class Ui_MainWindow(object):
 "	border-radius: 5px;\n"
 "	padding: 10px;\n"
 "	selection-color: rgb(255, 255, 255);\n"
-"	selection-background-col"
-                        "or: rgb(255, 121, 198);\n"
+"	selection-background-color: #6272a4;\n"
 "}\n"
 "QPlainTextEdit  QScrollBar:vertical {\n"
 "    width: 8px;\n"
 " }\n"
 "QPlainTextEdit  QScrollBar:horizontal {\n"
-"    height: 8px;\n"
+""
+                        "    height: 8px;\n"
 " }\n"
 "QPlainTextEdit:hover {\n"
 "	border: 2px solid rgb(64, 71, 88);\n"
@@ -323,7 +328,7 @@ class Ui_MainWindow(object):
 "	border-radius: 0px;\n"
 "}\n"
 "QScrollBar::handle:horizontal {\n"
-"    background: rgb(189, 147, 249);\n"
+"    background: #6272a4;\n"
 "    min-width: 25px;\n"
 "	border-radius: 4px\n"
 "}\n"
@@ -336,13 +341,13 @@ class Ui_MainWindow(object):
 "    subcontrol-position: right;\n"
 "    subcontrol-origin: margin;\n"
 "}\n"
-""
-                        "QScrollBar::sub-line:horizontal {\n"
+"QScrollBar::sub-line:horizontal {\n"
 "    border: none;\n"
 "    background: rgb(55, 63, 77);\n"
 "    width: 20px;\n"
 "	border-top-left-radius: 4px;\n"
-"    border-bottom-left-radius: 4px;\n"
+"    bo"
+                        "rder-bottom-left-radius: 4px;\n"
 "    subcontrol-position: left;\n"
 "    subcontrol-origin: margin;\n"
 "}\n"
@@ -361,8 +366,8 @@ class Ui_MainWindow(object):
 "    margin: 21px 0 21px 0;\n"
 "	border-radius: 0px;\n"
 " }\n"
-" QScrollBar::handle:vertical {	\n"
-"	background: rgb(189, 147, 249);\n"
+" QScrollBar::handle:vertical {\n"
+"	background: #6272a4;\n"
 "    min-height: 25px;\n"
 "	border-radius: 4px\n"
 " }\n"
@@ -373,14 +378,14 @@ class Ui_MainWindow(object):
 "	border-bottom-left-radius: 4px;\n"
 "    border-bottom-right-radius: 4px;\n"
 "     subcontrol-position: bottom;\n"
-"     su"
-                        "bcontrol-origin: margin;\n"
+"     subcontrol-origin: margin;\n"
 " }\n"
 " QScrollBar::sub-line:vertical {\n"
 "	border: none;\n"
 "    background: rgb(55, 63, 77);\n"
 "     height: 20px;\n"
-"	border-top-left-radius: 4px;\n"
+"	border-top-left-r"
+                        "adius: 4px;\n"
 "    border-top-right-radius: 4px;\n"
 "     subcontrol-position: top;\n"
 "     subcontrol-origin: margin;\n"
@@ -407,12 +412,12 @@ class Ui_MainWindow(object):
 "}\n"
 "QCheckBox::indicator:checked {\n"
 "    background: 3px solid rgb(52, 59, 72);\n"
-"	border: 3px solid rgb(52, 59, 72);	\n"
-"	back"
-                        "ground-image: url(:/icons/images/icons/cil-check-alt.png);\n"
+"	border: 3px solid rgb(52, 59, 72);\n"
+"	background-image: url(:/icons/images/icons/cil-check-alt.png);\n"
 "}\n"
 "\n"
-"/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
+"/* //////////////////////////////////////////////////////////////////////////////////////////////"
+                        "///\n"
 "RadioButton */\n"
 "QRadioButton::indicator {\n"
 "    border: 3px solid rgb(52, 59, 72);\n"
@@ -426,7 +431,7 @@ class Ui_MainWindow(object):
 "}\n"
 "QRadioButton::indicator:checked {\n"
 "    background: 3px solid rgb(94, 106, 130);\n"
-"	border: 3px solid rgb(52, 59, 72);	\n"
+"	border: 3px solid rgb(52, 59, 72);\n"
 "}\n"
 "\n"
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
@@ -443,20 +448,20 @@ class Ui_MainWindow(object):
 "}\n"
 "QComboBox::drop-down {\n"
 "	subcontrol-origin: padding;\n"
-"	subco"
-                        "ntrol-position: top right;\n"
-"	width: 25px; \n"
+"	subcontrol-position: top right;\n"
+"	width: 25px;\n"
 "	border-left-width: 3px;\n"
 "	border-left-color: rgba(39, 44, 54, 150);\n"
 "	border-left-style: solid;\n"
-"	border-top-right-radius: 3px;\n"
-"	border-bottom-right-radius: 3px;	\n"
+"	border-top-righ"
+                        "t-radius: 3px;\n"
+"	border-bottom-right-radius: 3px;\n"
 "	background-image: url(:/icons/images/icons/cil-arrow-bottom.png);\n"
 "	background-position: center;\n"
 "	background-repeat: no-reperat;\n"
 " }\n"
 "QComboBox QAbstractItemView {\n"
-"	color: rgb(255, 121, 198);	\n"
+"	color: #6272a4;\n"
 "	background-color: rgb(33, 37, 43);\n"
 "	padding: 10px;\n"
 "	selection-background-color: rgb(39, 44, 54);\n"
@@ -474,19 +479,19 @@ class Ui_MainWindow(object):
 "	background-color: rgb(55, 62, 76);\n"
 "}\n"
 "QSlider::handle:horizontal {\n"
-"    background-color: rgb(189, 147, 249);\n"
+"    background-color: #6272a4;\n"
 "    border: none;\n"
-"    h"
-                        "eight: 10px;\n"
+"    height: 10px;\n"
 "    width: 10px;\n"
 "    margin: 0px;\n"
 "	border-radius: 5px;\n"
 "}\n"
 "QSlider::handle:horizontal:hover {\n"
-"    background-color: rgb(195, 155, 255);\n"
+"    background-color: #6272a4;\n"
 "}\n"
-"QSlider::handle:horizontal:pressed {\n"
-"    background-color: rgb(255, 121, 198);\n"
+"QSlider::handle:horizontal:"
+                        "pressed {\n"
+"    background-color: #6272a4;\n"
 "}\n"
 "\n"
 "QSlider::groove:vertical {\n"
@@ -499,7 +504,7 @@ class Ui_MainWindow(object):
 "	background-color: rgb(55, 62, 76);\n"
 "}\n"
 "QSlider::handle:vertical {\n"
-"    background-color: rgb(189, 147, 249);\n"
+"    background-color: #6272a4;\n"
 "	border: none;\n"
 "    height: 10px;\n"
 "    width: 10px;\n"
@@ -507,27 +512,27 @@ class Ui_MainWindow(object):
 "	border-radius: 5px;\n"
 "}\n"
 "QSlider::handle:vertical:hover {\n"
-"    background-color: rgb(195, 155, 255);\n"
+"    background-color: #6272a4;\n"
 "}\n"
 "QSlider::handle:vertical:pressed {\n"
-"    background-color: rgb(255, 121, 198);\n"
+"    background-color: #6272a4;\n"
 "}\n"
 "\n"
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
 "CommandLinkButton */\n"
-"QCommandLi"
-                        "nkButton {	\n"
-"	color: rgb(255, 121, 198);\n"
+"QCommandLinkButton {\n"
+"	color: #6272a4;\n"
 "	border-radius: 5px;\n"
 "	padding: 5px;\n"
-"	color: rgb(255, 170, 255);\n"
+"	color: #6272a4;\n"
 "}\n"
-"QCommandLinkButton:hover {	\n"
-"	color: rgb(255, 170, 255);\n"
+"QCommandLinkButton:hover {\n"
+"	color: #6272a4;\n"
 "	background-color: rgb(44, 49, 60);\n"
 "}\n"
-"QCommandLinkButton:pressed {	\n"
-"	color: rgb(189, 147, 249);\n"
+"QCommandLinkButton:pressed {\n"
+"	color: #6272a"
+                        "4;\n"
 "	background-color: rgb(52, 58, 71);\n"
 "}\n"
 "\n"
@@ -535,14 +540,14 @@ class Ui_MainWindow(object):
 "Button */\n"
 "#pagesContainer QPushButton {\n"
 "	border: 2px solid rgb(52, 59, 72);\n"
-"	border-radius: 5px;	\n"
+"	border-radius: 5px;\n"
 "	background-color: rgb(52, 59, 72);\n"
 "}\n"
 "#pagesContainer QPushButton:hover {\n"
 "	background-color: rgb(57, 65, 80);\n"
 "	border: 2px solid rgb(61, 70, 86);\n"
 "}\n"
-"#pagesContainer QPushButton:pressed {	\n"
+"#pagesContainer QPushButton:pressed {\n"
 "	background-color: rgb(35, 40, 49);\n"
 "	border: 2px solid rgb(43, 50, 61);\n"
 "}\n"
@@ -627,11 +632,11 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
         self.toggleButton = QPushButton(self.toggleBox)
         self.toggleButton.setObjectName(u"toggleButton")
-        sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.toggleButton.sizePolicy().hasHeightForWidth())
-        self.toggleButton.setSizePolicy(sizePolicy)
+        sizePolicy1 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.toggleButton.sizePolicy().hasHeightForWidth())
+        self.toggleButton.setSizePolicy(sizePolicy1)
         self.toggleButton.setMinimumSize(QSize(0, 45))
         self.toggleButton.setFont(font)
         self.toggleButton.setCursor(QCursor(Qt.PointingHandCursor))
@@ -653,8 +658,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
         self.btn_home = QPushButton(self.topMenu)
         self.btn_home.setObjectName(u"btn_home")
-        sizePolicy.setHeightForWidth(self.btn_home.sizePolicy().hasHeightForWidth())
-        self.btn_home.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.btn_home.sizePolicy().hasHeightForWidth())
+        self.btn_home.setSizePolicy(sizePolicy1)
         self.btn_home.setMinimumSize(QSize(0, 45))
         self.btn_home.setFont(font)
         self.btn_home.setCursor(QCursor(Qt.PointingHandCursor))
@@ -665,8 +670,8 @@ class Ui_MainWindow(object):
 
         self.btn_widgets = QPushButton(self.topMenu)
         self.btn_widgets.setObjectName(u"btn_widgets")
-        sizePolicy.setHeightForWidth(self.btn_widgets.sizePolicy().hasHeightForWidth())
-        self.btn_widgets.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.btn_widgets.sizePolicy().hasHeightForWidth())
+        self.btn_widgets.setSizePolicy(sizePolicy1)
         self.btn_widgets.setMinimumSize(QSize(0, 45))
         self.btn_widgets.setFont(font)
         self.btn_widgets.setCursor(QCursor(Qt.PointingHandCursor))
@@ -677,8 +682,8 @@ class Ui_MainWindow(object):
 
         self.btn_new = QPushButton(self.topMenu)
         self.btn_new.setObjectName(u"btn_new")
-        sizePolicy.setHeightForWidth(self.btn_new.sizePolicy().hasHeightForWidth())
-        self.btn_new.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.btn_new.sizePolicy().hasHeightForWidth())
+        self.btn_new.setSizePolicy(sizePolicy1)
         self.btn_new.setMinimumSize(QSize(0, 45))
         self.btn_new.setFont(font)
         self.btn_new.setCursor(QCursor(Qt.PointingHandCursor))
@@ -689,8 +694,8 @@ class Ui_MainWindow(object):
 
         self.btn_save = QPushButton(self.topMenu)
         self.btn_save.setObjectName(u"btn_save")
-        sizePolicy.setHeightForWidth(self.btn_save.sizePolicy().hasHeightForWidth())
-        self.btn_save.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.btn_save.sizePolicy().hasHeightForWidth())
+        self.btn_save.setSizePolicy(sizePolicy1)
         self.btn_save.setMinimumSize(QSize(0, 45))
         self.btn_save.setFont(font)
         self.btn_save.setCursor(QCursor(Qt.PointingHandCursor))
@@ -701,8 +706,8 @@ class Ui_MainWindow(object):
 
         self.btn_exit = QPushButton(self.topMenu)
         self.btn_exit.setObjectName(u"btn_exit")
-        sizePolicy.setHeightForWidth(self.btn_exit.sizePolicy().hasHeightForWidth())
-        self.btn_exit.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.btn_exit.sizePolicy().hasHeightForWidth())
+        self.btn_exit.setSizePolicy(sizePolicy1)
         self.btn_exit.setMinimumSize(QSize(0, 45))
         self.btn_exit.setFont(font)
         self.btn_exit.setCursor(QCursor(Qt.PointingHandCursor))
@@ -724,8 +729,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
         self.toggleLeftBox = QPushButton(self.bottomMenu)
         self.toggleLeftBox.setObjectName(u"toggleLeftBox")
-        sizePolicy.setHeightForWidth(self.toggleLeftBox.sizePolicy().hasHeightForWidth())
-        self.toggleLeftBox.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.toggleLeftBox.sizePolicy().hasHeightForWidth())
+        self.toggleLeftBox.setSizePolicy(sizePolicy1)
         self.toggleLeftBox.setMinimumSize(QSize(0, 45))
         self.toggleLeftBox.setFont(font)
         self.toggleLeftBox.setCursor(QCursor(Qt.PointingHandCursor))
@@ -819,8 +824,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_11.setContentsMargins(0, 0, 0, 0)
         self.btn_share = QPushButton(self.extraTopMenu)
         self.btn_share.setObjectName(u"btn_share")
-        sizePolicy.setHeightForWidth(self.btn_share.sizePolicy().hasHeightForWidth())
-        self.btn_share.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.btn_share.sizePolicy().hasHeightForWidth())
+        self.btn_share.setSizePolicy(sizePolicy1)
         self.btn_share.setMinimumSize(QSize(0, 45))
         self.btn_share.setFont(font)
         self.btn_share.setCursor(QCursor(Qt.PointingHandCursor))
@@ -831,8 +836,8 @@ class Ui_MainWindow(object):
 
         self.btn_adjustments = QPushButton(self.extraTopMenu)
         self.btn_adjustments.setObjectName(u"btn_adjustments")
-        sizePolicy.setHeightForWidth(self.btn_adjustments.sizePolicy().hasHeightForWidth())
-        self.btn_adjustments.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.btn_adjustments.sizePolicy().hasHeightForWidth())
+        self.btn_adjustments.setSizePolicy(sizePolicy1)
         self.btn_adjustments.setMinimumSize(QSize(0, 45))
         self.btn_adjustments.setFont(font)
         self.btn_adjustments.setCursor(QCursor(Qt.PointingHandCursor))
@@ -843,8 +848,8 @@ class Ui_MainWindow(object):
 
         self.btn_more = QPushButton(self.extraTopMenu)
         self.btn_more.setObjectName(u"btn_more")
-        sizePolicy.setHeightForWidth(self.btn_more.sizePolicy().hasHeightForWidth())
-        self.btn_more.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.btn_more.sizePolicy().hasHeightForWidth())
+        self.btn_more.setSizePolicy(sizePolicy1)
         self.btn_more.setMinimumSize(QSize(0, 45))
         self.btn_more.setFont(font)
         self.btn_more.setCursor(QCursor(Qt.PointingHandCursor))
@@ -898,11 +903,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setContentsMargins(0, 0, 10, 0)
         self.leftBox = QFrame(self.contentTopBg)
         self.leftBox.setObjectName(u"leftBox")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
-        sizePolicy1.setHorizontalStretch(0)
-        sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.leftBox.sizePolicy().hasHeightForWidth())
-        self.leftBox.setSizePolicy(sizePolicy1)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.leftBox.sizePolicy().hasHeightForWidth())
+        self.leftBox.setSizePolicy(sizePolicy2)
         self.leftBox.setFrameShape(QFrame.NoFrame)
         self.leftBox.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_3 = QHBoxLayout(self.leftBox)
@@ -911,11 +916,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.titleRightInfo = QLabel(self.leftBox)
         self.titleRightInfo.setObjectName(u"titleRightInfo")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
-        sizePolicy2.setHorizontalStretch(0)
-        sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.titleRightInfo.sizePolicy().hasHeightForWidth())
-        self.titleRightInfo.setSizePolicy(sizePolicy2)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.titleRightInfo.sizePolicy().hasHeightForWidth())
+        self.titleRightInfo.setSizePolicy(sizePolicy3)
         self.titleRightInfo.setMaximumSize(QSize(16777215, 45))
         self.titleRightInfo.setFont(font)
         self.titleRightInfo.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
@@ -1159,8 +1164,8 @@ class Ui_MainWindow(object):
 
         self.horizontalScrollBar = QScrollBar(self.row_2)
         self.horizontalScrollBar.setObjectName(u"horizontalScrollBar")
-        sizePolicy.setHeightForWidth(self.horizontalScrollBar.sizePolicy().hasHeightForWidth())
-        self.horizontalScrollBar.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.horizontalScrollBar.sizePolicy().hasHeightForWidth())
+        self.horizontalScrollBar.setSizePolicy(sizePolicy1)
         self.horizontalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
 " QScrollBar:horizontal { background: rgb(52, 59, 72); }")
         self.horizontalScrollBar.setOrientation(Qt.Horizontal)
@@ -1195,7 +1200,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 218, 218))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 274, 218))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"
@@ -1301,11 +1306,11 @@ class Ui_MainWindow(object):
         __qtablewidgetitem23 = QTableWidgetItem()
         self.tableWidget.setItem(0, 3, __qtablewidgetitem23)
         self.tableWidget.setObjectName(u"tableWidget")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
-        sizePolicy3.setHorizontalStretch(0)
-        sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
-        self.tableWidget.setSizePolicy(sizePolicy3)
+        sizePolicy4 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy4.setHorizontalStretch(0)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
+        self.tableWidget.setSizePolicy(sizePolicy4)
         palette = QPalette()
         brush = QBrush(QColor(221, 221, 221, 255))
         brush.setStyle(Qt.SolidPattern)
@@ -1390,11 +1395,11 @@ class Ui_MainWindow(object):
 
         self.vehiculos_tbl = QTableWidget(self.frame_3)
         self.vehiculos_tbl.setObjectName(u"vehiculos_tbl")
-        sizePolicy4 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
-        sizePolicy4.setHorizontalStretch(0)
-        sizePolicy4.setVerticalStretch(0)
-        sizePolicy4.setHeightForWidth(self.vehiculos_tbl.sizePolicy().hasHeightForWidth())
-        self.vehiculos_tbl.setSizePolicy(sizePolicy4)
+        sizePolicy5 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy5.setHorizontalStretch(0)
+        sizePolicy5.setVerticalStretch(0)
+        sizePolicy5.setHeightForWidth(self.vehiculos_tbl.sizePolicy().hasHeightForWidth())
+        self.vehiculos_tbl.setSizePolicy(sizePolicy5)
 
         self.gridLayout_3.addWidget(self.vehiculos_tbl, 0, 0, 1, 2)
 
@@ -1445,7 +1450,7 @@ class Ui_MainWindow(object):
 
         self.frame = QFrame(self.new_page)
         self.frame.setObjectName(u"frame")
-        self.frame.setMaximumSize(QSize(450, 16777215))
+        self.frame.setMaximumSize(QSize(300, 16777215))
         self.frame.setTabletTracking(False)
         self.frame.setLayoutDirection(Qt.LeftToRight)
         self.frame.setFrameShape(QFrame.StyledPanel)
@@ -1475,11 +1480,11 @@ class Ui_MainWindow(object):
 
         self.num_btn_1 = QPushButton(self.frame)
         self.num_btn_1.setObjectName(u"num_btn_1")
-        sizePolicy5 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
-        sizePolicy5.setHorizontalStretch(0)
-        sizePolicy5.setVerticalStretch(0)
-        sizePolicy5.setHeightForWidth(self.num_btn_1.sizePolicy().hasHeightForWidth())
-        self.num_btn_1.setSizePolicy(sizePolicy5)
+        sizePolicy6 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
+        sizePolicy6.setHorizontalStretch(0)
+        sizePolicy6.setVerticalStretch(0)
+        sizePolicy6.setHeightForWidth(self.num_btn_1.sizePolicy().hasHeightForWidth())
+        self.num_btn_1.setSizePolicy(sizePolicy6)
         self.num_btn_1.setMinimumSize(QSize(65, 66))
         self.num_btn_1.setMaximumSize(QSize(150, 80))
 
@@ -1563,6 +1568,430 @@ class Ui_MainWindow(object):
         self.gridLayout_9.addItem(self.verticalSpacer, 2, 0, 1, 1)
 
         self.stackedWidget.addWidget(self.new_page)
+        self.checklist_page = QWidget()
+        self.checklist_page.setObjectName(u"checklist_page")
+        self.gridLayout_4 = QGridLayout(self.checklist_page)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.pregunta_13 = QLabel(self.checklist_page)
+        self.pregunta_13.setObjectName(u"pregunta_13")
+
+        self.gridLayout_4.addWidget(self.pregunta_13, 14, 0, 1, 1)
+
+        self.radioButton_12 = QRadioButton(self.checklist_page)
+        self.Q7 = QButtonGroup(MainWindow)
+        self.Q7.setObjectName(u"Q7")
+        self.Q7.addButton(self.radioButton_12)
+        self.radioButton_12.setObjectName(u"radioButton_12")
+        self.radioButton_12.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_12, 8, 1, 1, 1)
+
+        self.pregunta_7 = QLabel(self.checklist_page)
+        self.pregunta_7.setObjectName(u"pregunta_7")
+
+        self.gridLayout_4.addWidget(self.pregunta_7, 8, 0, 1, 1)
+
+        self.radioButton_23 = QRadioButton(self.checklist_page)
+        self.Q5 = QButtonGroup(MainWindow)
+        self.Q5.setObjectName(u"Q5")
+        self.Q5.addButton(self.radioButton_23)
+        self.radioButton_23.setObjectName(u"radioButton_23")
+        self.radioButton_23.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_23, 6, 2, 1, 1)
+
+        self.radioButton_35 = QRadioButton(self.checklist_page)
+        self.Q4 = QButtonGroup(MainWindow)
+        self.Q4.setObjectName(u"Q4")
+        self.Q4.addButton(self.radioButton_35)
+        self.radioButton_35.setObjectName(u"radioButton_35")
+        self.radioButton_35.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_35, 4, 3, 1, 1)
+
+        self.pregunta_15 = QLabel(self.checklist_page)
+        self.pregunta_15.setObjectName(u"pregunta_15")
+
+        self.gridLayout_4.addWidget(self.pregunta_15, 16, 0, 1, 1)
+
+        self.radioButton_38 = QRadioButton(self.checklist_page)
+        self.Q7.addButton(self.radioButton_38)
+        self.radioButton_38.setObjectName(u"radioButton_38")
+        self.radioButton_38.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_38, 8, 3, 1, 1)
+
+        self.radioButton_21 = QRadioButton(self.checklist_page)
+        self.Q3 = QButtonGroup(MainWindow)
+        self.Q3.setObjectName(u"Q3")
+        self.Q3.addButton(self.radioButton_21)
+        self.radioButton_21.setObjectName(u"radioButton_21")
+        self.radioButton_21.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_21, 3, 2, 1, 1)
+
+        self.pregunta_8 = QLabel(self.checklist_page)
+        self.pregunta_8.setObjectName(u"pregunta_8")
+
+        self.gridLayout_4.addWidget(self.pregunta_8, 9, 0, 1, 1)
+
+        self.radioButton_11 = QRadioButton(self.checklist_page)
+        self.Q6 = QButtonGroup(MainWindow)
+        self.Q6.setObjectName(u"Q6")
+        self.Q6.addButton(self.radioButton_11)
+        self.radioButton_11.setObjectName(u"radioButton_11")
+        self.radioButton_11.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_11, 7, 1, 1, 1)
+
+        self.radioButton_24 = QRadioButton(self.checklist_page)
+        self.Q6.addButton(self.radioButton_24)
+        self.radioButton_24.setObjectName(u"radioButton_24")
+        self.radioButton_24.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_24, 7, 2, 1, 1)
+
+        self.radioButton_16 = QRadioButton(self.checklist_page)
+        self.Q11 = QButtonGroup(MainWindow)
+        self.Q11.setObjectName(u"Q11")
+        self.Q11.addButton(self.radioButton_16)
+        self.radioButton_16.setObjectName(u"radioButton_16")
+        self.radioButton_16.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_16, 12, 1, 1, 1)
+
+        self.radioButton_13 = QRadioButton(self.checklist_page)
+        self.Q8 = QButtonGroup(MainWindow)
+        self.Q8.setObjectName(u"Q8")
+        self.Q8.addButton(self.radioButton_13)
+        self.radioButton_13.setObjectName(u"radioButton_13")
+        self.radioButton_13.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_13, 9, 1, 1, 1)
+
+        self.pregunta_12 = QLabel(self.checklist_page)
+        self.pregunta_12.setObjectName(u"pregunta_12")
+
+        self.gridLayout_4.addWidget(self.pregunta_12, 13, 0, 1, 1)
+
+        self.radioButton_3 = QRadioButton(self.checklist_page)
+        self.Q2 = QButtonGroup(MainWindow)
+        self.Q2.setObjectName(u"Q2")
+        self.Q2.addButton(self.radioButton_3)
+        self.radioButton_3.setObjectName(u"radioButton_3")
+        self.radioButton_3.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_3, 1, 2, 1, 1)
+
+        self.radioButton_20 = QRadioButton(self.checklist_page)
+        self.Q13 = QButtonGroup(MainWindow)
+        self.Q13.setObjectName(u"Q13")
+        self.Q13.addButton(self.radioButton_20)
+        self.radioButton_20.setObjectName(u"radioButton_20")
+        self.radioButton_20.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_20, 14, 1, 1, 1)
+
+        self.pregunta_6 = QLabel(self.checklist_page)
+        self.pregunta_6.setObjectName(u"pregunta_6")
+
+        self.gridLayout_4.addWidget(self.pregunta_6, 7, 0, 1, 1)
+
+        self.radioButton_17 = QRadioButton(self.checklist_page)
+        self.Q12 = QButtonGroup(MainWindow)
+        self.Q12.setObjectName(u"Q12")
+        self.Q12.addButton(self.radioButton_17)
+        self.radioButton_17.setObjectName(u"radioButton_17")
+        self.radioButton_17.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_17, 13, 1, 1, 1)
+
+        self.pregunta_5 = QLabel(self.checklist_page)
+        self.pregunta_5.setObjectName(u"pregunta_5")
+
+        self.gridLayout_4.addWidget(self.pregunta_5, 6, 0, 1, 1)
+
+        self.pregunta_14 = QLabel(self.checklist_page)
+        self.pregunta_14.setObjectName(u"pregunta_14")
+
+        self.gridLayout_4.addWidget(self.pregunta_14, 15, 0, 1, 1)
+
+        self.radioButton_2 = QRadioButton(self.checklist_page)
+        self.Q2.addButton(self.radioButton_2)
+        self.radioButton_2.setObjectName(u"radioButton_2")
+        self.radioButton_2.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_2, 1, 1, 1, 1)
+
+        self.pregunta_9 = QLabel(self.checklist_page)
+        self.pregunta_9.setObjectName(u"pregunta_9")
+
+        self.gridLayout_4.addWidget(self.pregunta_9, 10, 0, 1, 1)
+
+        self.radioButton_32 = QRadioButton(self.checklist_page)
+        self.Q14 = QButtonGroup(MainWindow)
+        self.Q14.setObjectName(u"Q14")
+        self.Q14.addButton(self.radioButton_32)
+        self.radioButton_32.setObjectName(u"radioButton_32")
+        self.radioButton_32.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_32, 15, 2, 1, 1)
+
+        self.radioButton_4 = QRadioButton(self.checklist_page)
+        self.Q2.addButton(self.radioButton_4)
+        self.radioButton_4.setObjectName(u"radioButton_4")
+        self.radioButton_4.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_4, 1, 3, 1, 1)
+
+        self.radioButton_40 = QRadioButton(self.checklist_page)
+        self.Q9 = QButtonGroup(MainWindow)
+        self.Q9.setObjectName(u"Q9")
+        self.Q9.addButton(self.radioButton_40)
+        self.radioButton_40.setObjectName(u"radioButton_40")
+        self.radioButton_40.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_40, 10, 3, 1, 1)
+
+        self.radioButton_26 = QRadioButton(self.checklist_page)
+        self.Q8.addButton(self.radioButton_26)
+        self.radioButton_26.setObjectName(u"radioButton_26")
+        self.radioButton_26.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_26, 9, 2, 1, 1)
+
+        self.radioButton_30 = QRadioButton(self.checklist_page)
+        self.Q12.addButton(self.radioButton_30)
+        self.radioButton_30.setObjectName(u"radioButton_30")
+        self.radioButton_30.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_30, 13, 2, 1, 1)
+
+        self.pregunta_11 = QLabel(self.checklist_page)
+        self.pregunta_11.setObjectName(u"pregunta_11")
+
+        self.gridLayout_4.addWidget(self.pregunta_11, 12, 0, 1, 1)
+
+        self.radioButton_27 = QRadioButton(self.checklist_page)
+        self.Q9.addButton(self.radioButton_27)
+        self.radioButton_27.setObjectName(u"radioButton_27")
+        self.radioButton_27.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_27, 10, 2, 1, 1)
+
+        self.radioButton_18 = QRadioButton(self.checklist_page)
+        self.Q14.addButton(self.radioButton_18)
+        self.radioButton_18.setObjectName(u"radioButton_18")
+        self.radioButton_18.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_18, 15, 1, 1, 1)
+
+        self.radioButton_37 = QRadioButton(self.checklist_page)
+        self.Q6.addButton(self.radioButton_37)
+        self.radioButton_37.setObjectName(u"radioButton_37")
+        self.radioButton_37.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_37, 7, 3, 1, 1)
+
+        self.radioButton_33 = QRadioButton(self.checklist_page)
+        self.Q15 = QButtonGroup(MainWindow)
+        self.Q15.setObjectName(u"Q15")
+        self.Q15.addButton(self.radioButton_33)
+        self.radioButton_33.setObjectName(u"radioButton_33")
+        self.radioButton_33.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_33, 16, 2, 1, 1)
+
+        self.radioButton_5 = QRadioButton(self.checklist_page)
+        self.Q1 = QButtonGroup(MainWindow)
+        self.Q1.setObjectName(u"Q1")
+        self.Q1.addButton(self.radioButton_5)
+        self.radioButton_5.setObjectName(u"radioButton_5")
+
+        self.gridLayout_4.addWidget(self.radioButton_5, 0, 1, 1, 1)
+
+        self.radioButton_14 = QRadioButton(self.checklist_page)
+        self.Q9.addButton(self.radioButton_14)
+        self.radioButton_14.setObjectName(u"radioButton_14")
+        self.radioButton_14.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_14, 10, 1, 1, 1)
+
+        self.radioButton_34 = QRadioButton(self.checklist_page)
+        self.Q3.addButton(self.radioButton_34)
+        self.radioButton_34.setObjectName(u"radioButton_34")
+        self.radioButton_34.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_34, 3, 3, 1, 1)
+
+        self.pregunta_4 = QLabel(self.checklist_page)
+        self.pregunta_4.setObjectName(u"pregunta_4")
+
+        self.gridLayout_4.addWidget(self.pregunta_4, 4, 0, 1, 1)
+
+        self.radioButton_25 = QRadioButton(self.checklist_page)
+        self.Q7.addButton(self.radioButton_25)
+        self.radioButton_25.setObjectName(u"radioButton_25")
+        self.radioButton_25.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_25, 8, 2, 1, 1)
+
+        self.radioButton_6 = QRadioButton(self.checklist_page)
+        self.Q1.addButton(self.radioButton_6)
+        self.radioButton_6.setObjectName(u"radioButton_6")
+        self.radioButton_6.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_6, 0, 2, 1, 1)
+
+        self.radioButton_10 = QRadioButton(self.checklist_page)
+        self.Q5.addButton(self.radioButton_10)
+        self.radioButton_10.setObjectName(u"radioButton_10")
+        self.radioButton_10.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_10, 6, 1, 1, 1)
+
+        self.radioButton_39 = QRadioButton(self.checklist_page)
+        self.Q8.addButton(self.radioButton_39)
+        self.radioButton_39.setObjectName(u"radioButton_39")
+        self.radioButton_39.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_39, 9, 3, 1, 1)
+
+        self.radioButton_36 = QRadioButton(self.checklist_page)
+        self.Q5.addButton(self.radioButton_36)
+        self.radioButton_36.setObjectName(u"radioButton_36")
+        self.radioButton_36.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_36, 6, 3, 1, 1)
+
+        self.radioButton_29 = QRadioButton(self.checklist_page)
+        self.Q11.addButton(self.radioButton_29)
+        self.radioButton_29.setObjectName(u"radioButton_29")
+        self.radioButton_29.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_29, 12, 2, 1, 1)
+
+        self.pregunta_3 = QLabel(self.checklist_page)
+        self.pregunta_3.setObjectName(u"pregunta_3")
+
+        self.gridLayout_4.addWidget(self.pregunta_3, 3, 0, 1, 1)
+
+        self.radioButton_22 = QRadioButton(self.checklist_page)
+        self.Q4.addButton(self.radioButton_22)
+        self.radioButton_22.setObjectName(u"radioButton_22")
+        self.radioButton_22.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_22, 4, 2, 1, 1)
+
+        self.radioButton_9 = QRadioButton(self.checklist_page)
+        self.Q4.addButton(self.radioButton_9)
+        self.radioButton_9.setObjectName(u"radioButton_9")
+        self.radioButton_9.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_9, 4, 1, 1, 1)
+
+        self.pregunta_10 = QLabel(self.checklist_page)
+        self.pregunta_10.setObjectName(u"pregunta_10")
+
+        self.gridLayout_4.addWidget(self.pregunta_10, 11, 0, 1, 1)
+
+        self.pregunta_1 = QLabel(self.checklist_page)
+        self.pregunta_1.setObjectName(u"pregunta_1")
+
+        self.gridLayout_4.addWidget(self.pregunta_1, 0, 0, 1, 1)
+
+        self.radioButton_28 = QRadioButton(self.checklist_page)
+        self.Q10 = QButtonGroup(MainWindow)
+        self.Q10.setObjectName(u"Q10")
+        self.Q10.addButton(self.radioButton_28)
+        self.radioButton_28.setObjectName(u"radioButton_28")
+        self.radioButton_28.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_28, 11, 2, 1, 1)
+
+        self.radioButton_31 = QRadioButton(self.checklist_page)
+        self.Q13.addButton(self.radioButton_31)
+        self.radioButton_31.setObjectName(u"radioButton_31")
+        self.radioButton_31.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_31, 14, 2, 1, 1)
+
+        self.radioButton_15 = QRadioButton(self.checklist_page)
+        self.Q10.addButton(self.radioButton_15)
+        self.radioButton_15.setObjectName(u"radioButton_15")
+        self.radioButton_15.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_15, 11, 1, 1, 1)
+
+        self.radioButton_19 = QRadioButton(self.checklist_page)
+        self.Q15.addButton(self.radioButton_19)
+        self.radioButton_19.setObjectName(u"radioButton_19")
+        self.radioButton_19.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_19, 16, 1, 1, 1)
+
+        self.radioButton_8 = QRadioButton(self.checklist_page)
+        self.Q3.addButton(self.radioButton_8)
+        self.radioButton_8.setObjectName(u"radioButton_8")
+        self.radioButton_8.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_8, 3, 1, 1, 1)
+
+        self.pregunta_2 = QLabel(self.checklist_page)
+        self.pregunta_2.setObjectName(u"pregunta_2")
+
+        self.gridLayout_4.addWidget(self.pregunta_2, 1, 0, 1, 1)
+
+        self.radioButton_7 = QRadioButton(self.checklist_page)
+        self.Q1.addButton(self.radioButton_7)
+        self.radioButton_7.setObjectName(u"radioButton_7")
+        self.radioButton_7.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_7, 0, 3, 1, 1)
+
+        self.radioButton_41 = QRadioButton(self.checklist_page)
+        self.Q10.addButton(self.radioButton_41)
+        self.radioButton_41.setObjectName(u"radioButton_41")
+        self.radioButton_41.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_41, 11, 3, 1, 1)
+
+        self.radioButton_42 = QRadioButton(self.checklist_page)
+        self.Q11.addButton(self.radioButton_42)
+        self.radioButton_42.setObjectName(u"radioButton_42")
+        self.radioButton_42.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_42, 12, 3, 1, 1)
+
+        self.radioButton_43 = QRadioButton(self.checklist_page)
+        self.Q12.addButton(self.radioButton_43)
+        self.radioButton_43.setObjectName(u"radioButton_43")
+        self.radioButton_43.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_43, 13, 3, 1, 1)
+
+        self.radioButton_44 = QRadioButton(self.checklist_page)
+        self.Q13.addButton(self.radioButton_44)
+        self.radioButton_44.setObjectName(u"radioButton_44")
+        self.radioButton_44.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_44, 14, 3, 1, 1)
+
+        self.radioButton_45 = QRadioButton(self.checklist_page)
+        self.Q14.addButton(self.radioButton_45)
+        self.radioButton_45.setObjectName(u"radioButton_45")
+        self.radioButton_45.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_45, 15, 3, 1, 1)
+
+        self.radioButton_46 = QRadioButton(self.checklist_page)
+        self.Q15.addButton(self.radioButton_46)
+        self.radioButton_46.setObjectName(u"radioButton_46")
+        self.radioButton_46.setMaximumSize(QSize(100, 35))
+
+        self.gridLayout_4.addWidget(self.radioButton_46, 16, 3, 1, 1)
+
+        self.stackedWidget.addWidget(self.checklist_page)
 
         self.verticalLayout_15.addWidget(self.stackedWidget)
 
@@ -1605,8 +2034,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_14.setContentsMargins(0, 0, 0, 0)
         self.btn_message = QPushButton(self.topMenus)
         self.btn_message.setObjectName(u"btn_message")
-        sizePolicy.setHeightForWidth(self.btn_message.sizePolicy().hasHeightForWidth())
-        self.btn_message.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.btn_message.sizePolicy().hasHeightForWidth())
+        self.btn_message.setSizePolicy(sizePolicy1)
         self.btn_message.setMinimumSize(QSize(0, 45))
         self.btn_message.setFont(font)
         self.btn_message.setCursor(QCursor(Qt.PointingHandCursor))
@@ -1617,8 +2046,8 @@ class Ui_MainWindow(object):
 
         self.btn_print = QPushButton(self.topMenus)
         self.btn_print.setObjectName(u"btn_print")
-        sizePolicy.setHeightForWidth(self.btn_print.sizePolicy().hasHeightForWidth())
-        self.btn_print.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.btn_print.sizePolicy().hasHeightForWidth())
+        self.btn_print.setSizePolicy(sizePolicy1)
         self.btn_print.setMinimumSize(QSize(0, 45))
         self.btn_print.setFont(font)
         self.btn_print.setCursor(QCursor(Qt.PointingHandCursor))
@@ -1629,8 +2058,8 @@ class Ui_MainWindow(object):
 
         self.btn_logout = QPushButton(self.topMenus)
         self.btn_logout.setObjectName(u"btn_logout")
-        sizePolicy.setHeightForWidth(self.btn_logout.sizePolicy().hasHeightForWidth())
-        self.btn_logout.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.btn_logout.sizePolicy().hasHeightForWidth())
+        self.btn_logout.setSizePolicy(sizePolicy1)
         self.btn_logout.setMinimumSize(QSize(0, 45))
         self.btn_logout.setFont(font)
         self.btn_logout.setCursor(QCursor(Qt.PointingHandCursor))
@@ -1714,7 +2143,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(3)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1839,6 +2268,66 @@ class Ui_MainWindow(object):
         self.num_btn_2.setText(QCoreApplication.translate("MainWindow", u"2", None))
         self.num_btn_7.setText(QCoreApplication.translate("MainWindow", u"7", None))
         self.num_btn_4.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.pregunta_13.setText("")
+        self.radioButton_12.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.pregunta_7.setText("")
+        self.radioButton_23.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.radioButton_35.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.pregunta_15.setText("")
+        self.radioButton_38.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.radioButton_21.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.pregunta_8.setText("")
+        self.radioButton_11.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.radioButton_24.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.radioButton_16.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.radioButton_13.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.pregunta_12.setText("")
+        self.radioButton_3.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.radioButton_20.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.pregunta_6.setText("")
+        self.radioButton_17.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.pregunta_5.setText("")
+        self.pregunta_14.setText("")
+        self.radioButton_2.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.pregunta_9.setText("")
+        self.radioButton_32.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.radioButton_4.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.radioButton_40.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.radioButton_26.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.radioButton_30.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.pregunta_11.setText("")
+        self.radioButton_27.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.radioButton_18.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.radioButton_37.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.radioButton_33.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.radioButton_5.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.radioButton_14.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.radioButton_34.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.pregunta_4.setText("")
+        self.radioButton_25.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.radioButton_6.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.radioButton_10.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.radioButton_39.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.radioButton_36.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.radioButton_29.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.pregunta_3.setText("")
+        self.radioButton_22.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.radioButton_9.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.pregunta_10.setText("")
+        self.pregunta_1.setText("")
+        self.radioButton_28.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.radioButton_31.setText(QCoreApplication.translate("MainWindow", u"NOK", None))
+        self.radioButton_15.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.radioButton_19.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.radioButton_8.setText(QCoreApplication.translate("MainWindow", u"OK", None))
+        self.pregunta_2.setText("")
+        self.radioButton_7.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.radioButton_41.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.radioButton_42.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.radioButton_43.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.radioButton_44.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.radioButton_45.setText(QCoreApplication.translate("MainWindow", u"NA", None))
+        self.radioButton_46.setText(QCoreApplication.translate("MainWindow", u"NA", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"Print", None))
         self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"Logout", None))
