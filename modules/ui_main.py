@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1100, 733)
+        MainWindow.resize(1100, 700)
         sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -1200,7 +1200,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 274, 218))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 218, 218))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"
@@ -1386,12 +1386,12 @@ class Ui_MainWindow(object):
         self.gridLayout_5.setObjectName(u"gridLayout_5")
         self.gridLayout_3 = QGridLayout()
         self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.cheklist_btn = QPushButton(self.frame_3)
-        self.cheklist_btn.setObjectName(u"cheklist_btn")
-        self.cheklist_btn.setMinimumSize(QSize(100, 25))
-        self.cheklist_btn.setMaximumSize(QSize(150, 50))
+        self.monitores_btn = QPushButton(self.frame_3)
+        self.monitores_btn.setObjectName(u"monitores_btn")
+        self.monitores_btn.setMinimumSize(QSize(100, 25))
+        self.monitores_btn.setMaximumSize(QSize(150, 50))
 
-        self.gridLayout_3.addWidget(self.cheklist_btn, 1, 1, 1, 1)
+        self.gridLayout_3.addWidget(self.monitores_btn, 1, 1, 1, 1)
 
         self.vehiculos_tbl = QTableWidget(self.frame_3)
         self.vehiculos_tbl.setObjectName(u"vehiculos_tbl")
@@ -1568,6 +1568,71 @@ class Ui_MainWindow(object):
         self.gridLayout_9.addItem(self.verticalSpacer, 2, 0, 1, 1)
 
         self.stackedWidget.addWidget(self.new_page)
+        self.monitores_page = QWidget()
+        self.monitores_page.setObjectName(u"monitores_page")
+        self.gridLayout_7 = QGridLayout(self.monitores_page)
+        self.gridLayout_7.setSpacing(0)
+        self.gridLayout_7.setObjectName(u"gridLayout_7")
+        self.gridLayout_7.setContentsMargins(0, 0, -1, 6)
+        self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout_7.addItem(self.horizontalSpacer_4, 1, 0, 1, 1)
+
+        self.gridLayout_6 = QGridLayout()
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.monitorI_lbl = QLabel(self.monitores_page)
+        self.monitorI_lbl.setObjectName(u"monitorI_lbl")
+        self.monitorI_lbl.setMinimumSize(QSize(280, 66))
+        self.monitorI_lbl.setMaximumSize(QSize(280, 66))
+
+        self.gridLayout_6.addWidget(self.monitorI_lbl, 1, 1, 1, 1)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Preferred)
+
+        self.gridLayout_6.addItem(self.verticalSpacer_2, 2, 1, 1, 1)
+
+        self.monitores_tbl = QTableWidget(self.monitores_page)
+        self.monitores_tbl.setObjectName(u"monitores_tbl")
+        sizePolicy4.setHeightForWidth(self.monitores_tbl.sizePolicy().hasHeightForWidth())
+        self.monitores_tbl.setSizePolicy(sizePolicy4)
+        self.monitores_tbl.setMinimumSize(QSize(400, 453))
+        self.monitores_tbl.setMaximumSize(QSize(400, 600))
+
+        self.gridLayout_6.addWidget(self.monitores_tbl, 1, 0, 2, 1)
+
+        self.monitor_lbl = QLabel(self.monitores_page)
+        self.monitor_lbl.setObjectName(u"monitor_lbl")
+        sizePolicy4.setHeightForWidth(self.monitor_lbl.sizePolicy().hasHeightForWidth())
+        self.monitor_lbl.setSizePolicy(sizePolicy4)
+        self.monitor_lbl.setMinimumSize(QSize(280, 66))
+        self.monitor_lbl.setMaximumSize(QSize(280, 66))
+
+        self.gridLayout_6.addWidget(self.monitor_lbl, 0, 0, 1, 1)
+
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout_6.addItem(self.horizontalSpacer_3, 1, 2, 1, 1)
+
+        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout_6.addItem(self.verticalSpacer_3, 4, 0, 1, 1)
+
+
+        self.gridLayout_7.addLayout(self.gridLayout_6, 0, 0, 1, 2)
+
+        self.checklist_btn = QPushButton(self.monitores_page)
+        self.checklist_btn.setObjectName(u"checklist_btn")
+        sizePolicy7 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Maximum)
+        sizePolicy7.setHorizontalStretch(0)
+        sizePolicy7.setVerticalStretch(0)
+        sizePolicy7.setHeightForWidth(self.checklist_btn.sizePolicy().hasHeightForWidth())
+        self.checklist_btn.setSizePolicy(sizePolicy7)
+        self.checklist_btn.setMinimumSize(QSize(150, 50))
+        self.checklist_btn.setMaximumSize(QSize(150, 50))
+
+        self.gridLayout_7.addWidget(self.checklist_btn, 1, 1, 1, 1)
+
+        self.stackedWidget.addWidget(self.monitores_page)
         self.checklist_page = QWidget()
         self.checklist_page.setObjectName(u"checklist_page")
         self.gridLayout_4 = QGridLayout(self.checklist_page)
@@ -2251,7 +2316,7 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Line", None));
         self.tableWidget.setSortingEnabled(__sortingEnabled)
 
-        self.cheklist_btn.setText(QCoreApplication.translate("MainWindow", u"Checklist", None))
+        self.monitores_btn.setText(QCoreApplication.translate("MainWindow", u"Monitores", None))
         self.motrec_btn.setText(QCoreApplication.translate("MainWindow", u"MOTREC", None))
         self.photo_lbl.setText("")
         self.nombre_lbl.setText("")
@@ -2268,6 +2333,9 @@ class Ui_MainWindow(object):
         self.num_btn_2.setText(QCoreApplication.translate("MainWindow", u"2", None))
         self.num_btn_7.setText(QCoreApplication.translate("MainWindow", u"7", None))
         self.num_btn_4.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.monitorI_lbl.setText("")
+        self.monitor_lbl.setText(QCoreApplication.translate("MainWindow", u"MONITORES:", None))
+        self.checklist_btn.setText(QCoreApplication.translate("MainWindow", u"Checklist", None))
         self.pregunta_13.setText("")
         self.radioButton_12.setText(QCoreApplication.translate("MainWindow", u"OK", None))
         self.pregunta_7.setText("")

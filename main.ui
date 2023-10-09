@@ -8,7 +8,7 @@
     <x>0</x>
     <y>0</y>
     <width>1100</width>
-    <height>733</height>
+    <height>700</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -2182,7 +2182,7 @@ background-repeat: no-repeat;</string>
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>274</width>
+                                 <width>218</width>
                                  <height>218</height>
                                 </rect>
                                </property>
@@ -2694,7 +2694,7 @@ background-repeat: no-repeat;</string>
                           <item row="1" column="0" colspan="2">
                            <layout class="QGridLayout" name="gridLayout_3">
                             <item row="1" column="1">
-                             <widget class="QPushButton" name="cheklist_btn">
+                             <widget class="QPushButton" name="monitores_btn">
                               <property name="minimumSize">
                                <size>
                                 <width>100</width>
@@ -2708,7 +2708,7 @@ background-repeat: no-repeat;</string>
                                </size>
                               </property>
                               <property name="text">
-                               <string>Checklist</string>
+                               <string>Monitores</string>
                               </property>
                              </widget>
                             </item>
@@ -3142,6 +3142,178 @@ background-repeat: no-repeat;</string>
                           </size>
                          </property>
                         </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="monitores_page">
+                      <layout class="QGridLayout" name="gridLayout_7">
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>6</number>
+                       </property>
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item row="1" column="0">
+                        <spacer name="horizontalSpacer_4">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item row="0" column="0" colspan="2">
+                        <layout class="QGridLayout" name="gridLayout_6">
+                         <item row="1" column="1">
+                          <widget class="QLabel" name="monitorI_lbl">
+                           <property name="minimumSize">
+                            <size>
+                             <width>280</width>
+                             <height>66</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>280</width>
+                             <height>66</height>
+                            </size>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="1">
+                          <spacer name="verticalSpacer_2">
+                           <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                           </property>
+                           <property name="sizeType">
+                            <enum>QSizePolicy::Preferred</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>20</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item row="1" column="0" rowspan="2">
+                          <widget class="QTableWidget" name="monitores_tbl">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>400</width>
+                             <height>453</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>400</width>
+                             <height>600</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="0">
+                          <widget class="QLabel" name="monitor_lbl">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>280</width>
+                             <height>66</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>280</width>
+                             <height>66</height>
+                            </size>
+                           </property>
+                           <property name="text">
+                            <string>MONITORES:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="2">
+                          <spacer name="horizontalSpacer_3">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeType">
+                            <enum>QSizePolicy::Expanding</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item row="4" column="0">
+                          <spacer name="verticalSpacer_3">
+                           <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                           </property>
+                           <property name="sizeType">
+                            <enum>QSizePolicy::Expanding</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>20</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                        </layout>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QPushButton" name="checklist_btn">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>150</width>
+                           <height>50</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>150</width>
+                           <height>50</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>Checklist</string>
+                         </property>
+                        </widget>
                        </item>
                       </layout>
                      </widget>
@@ -4319,20 +4491,20 @@ background-repeat: no-repeat;</string>
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="Q2"/>
-  <buttongroup name="Q1"/>
-  <buttongroup name="Q3"/>
-  <buttongroup name="Q4"/>
-  <buttongroup name="Q5"/>
-  <buttongroup name="Q6"/>
-  <buttongroup name="Q7"/>
-  <buttongroup name="Q8"/>
-  <buttongroup name="Q9"/>
-  <buttongroup name="Q10"/>
-  <buttongroup name="Q11"/>
-  <buttongroup name="Q12"/>
-  <buttongroup name="Q13"/>
   <buttongroup name="Q14"/>
+  <buttongroup name="Q7"/>
+  <buttongroup name="Q10"/>
+  <buttongroup name="Q8"/>
+  <buttongroup name="Q12"/>
+  <buttongroup name="Q4"/>
+  <buttongroup name="Q3"/>
   <buttongroup name="Q15"/>
+  <buttongroup name="Q9"/>
+  <buttongroup name="Q13"/>
+  <buttongroup name="Q1"/>
+  <buttongroup name="Q5"/>
+  <buttongroup name="Q2"/>
+  <buttongroup name="Q11"/>
+  <buttongroup name="Q6"/>
  </buttongroups>
 </ui>
