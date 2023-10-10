@@ -46,8 +46,7 @@ def Obtener_monitores(widgets):
                 item = QTableWidgetItem(str(value))
                 widgets.monitores_tbl.setItem(row_num, col_num, item)
             row_num += 1
-
-        conn.close()
-
     except Exception as e:
-        print(f"Ocurrió un error: {str(e)}")
+        handle_error(widgets, str(e))
+    finally:
+        close_database_connection(conn)

@@ -1,7 +1,7 @@
 # ///////////////////////////////////////////////////////////////
 # NUEVO KANVAN
 #
-# PAGINA DE FUNCIONALIDAD DE LA APLICACIÓN
+# PAGINA PRINCIPAL DE LA APLICACIÓN
 #
 # INDICE:
 #   1. LIBRERIAS

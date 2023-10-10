@@ -31,13 +31,12 @@ def Obtener_checklist(widgets):
         cursor.execute(consulta)
         resultado = cursor.fetchall()
         print(resultado)
-        conn.close()
-
         for i, pregunta in enumerate(resultado):
             label_name = f"pregunta_{i + 1}"
             label_widget = getattr(widgets, label_name, None)
             if label_widget:
                 label_widget.setText(pregunta[0].replace("\n", " ").replace("\r", " "))
-
     except Exception as e:
-        print(f"Ocurrió un error: {str(e)}")
+        handle_error(widgets, str(e))
+    finally:
+        close_database_connection(conn)
