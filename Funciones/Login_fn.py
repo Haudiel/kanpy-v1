@@ -135,3 +135,47 @@ def Guardar_itemSelected(widgets, item):
     else:
         # No se seleccionó ningún elemento, deshabilitar el botón
         widgets.monitores_btn.setVisible(False)
+
+def ObtenerLicencias(widgets):
+    empleado_id = widgets.employeeID_tbx.text()
+    conn, cursor = connect_to_database()
+    try:
+        consulta = """\
+                { CALL getLicenciasChoferes_kpy (@employee=?) }
+                """
+        params = (empleado_id, )
+        cursor.execute(consulta, params)
+        resultado = cursor.fetchall()
+
+        populate_tableLic(widgets, resultado)
+    except Exception as e:
+        handle_error(widgets, str(e))
+    finally:
+        close_database_connection(conn)
+
+def populate_tableLic(widgets, resultado):
+    num_filas = len(resultado)
+    num_columnas = 3  # Number of columns to display: Tipo, Expira, Dias Vigencia
+
+    widgets.licencias_tbl.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+    widgets.licencias_tbl.verticalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+    widgets.licencias_tbl.verticalHeader().setVisible(False)
+
+    # Set the number of rows and columns in the table
+    widgets.licencias_tbl.setRowCount(num_filas)
+    widgets.licencias_tbl.setColumnCount(num_columnas)
+
+    # Define the header labels for the displayed columns
+    header_labels = ['Tipo', 'Expira', 'Dias Vigencia']
+    widgets.licencias_tbl.setHorizontalHeaderLabels(header_labels)
+
+    for row_index, row_data in enumerate(resultado):
+        tipo = row_data[6]  # The 7th element in the row corresponds to 'Tipo'
+        expira = row_data[5]  # The 6th element in the row corresponds to 'Expira'
+        dias_vigencia = row_data[7]  # The 8th element in the row corresponds to 'Dias Vigencia'
+
+        # Populate the table with data
+        widgets.licencias_tbl.setItem(row_index, 0, QTableWidgetItem(tipo))
+        widgets.licencias_tbl.setItem(row_index, 1, QTableWidgetItem(expira))
+        widgets.licencias_tbl.setItem(row_index, 2, QTableWidgetItem(str(dias_vigencia)))
+

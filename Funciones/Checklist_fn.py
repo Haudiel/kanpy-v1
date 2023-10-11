@@ -40,3 +40,8 @@ def Obtener_checklist(widgets):
         handle_error(widgets, str(e))
     finally:
         close_database_connection(conn)
+
+def radio_button_clicked(button):
+    # Identificar en qué grupo se encuentra el botón seleccionado
+    group_name = button.group().objectName()
+    print(f"Botón seleccionado en el Grupo {group_name}: {button.text()}")

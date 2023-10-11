@@ -19,6 +19,7 @@
 #       9.4 CHECKLIST
 #       9.5 LABEL CONEXION
 #       9.6 LABEL BATERIA
+#       9.7 RADIO BUTTONS
 #   10. EXTRA LEFT BOX
 #   11. EXTRA RIGHT BOX
 #   12. SHOW APP
@@ -42,9 +43,9 @@ import psutil
 import pyodbc
 from modules import *
 from modules import Settings
-from Funciones.Login_fn import Obtener_Empleado, Obtener_vehiculos, Obtener_estado_bateria, Guardar_itemSelected
+from Funciones.Login_fn import Obtener_Empleado, Obtener_vehiculos, Obtener_estado_bateria, Guardar_itemSelected, ObtenerLicencias
 from Funciones.Monitores_fn import Obtener_monitores
-from Funciones.Checklist_fn import Obtener_checklist
+from Funciones.Checklist_fn import Obtener_checklist, radio_button_clicked
 from widgets import *
 os.environ["QT_FONT_DPI"] = "96"
 
@@ -79,15 +80,9 @@ class MainWindow(QMainWindow):
         # 7. SET UI DEFINITIONS
         UIFunctions.uiDefinitions(self)
 
-        # 8. QTableWidget PARAMETERS
-        widgets.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-
     # 9. FUNCIONALIDAD DE BOTONES
         # 9.1 LEFT MENUS
         widgets.btn_home.clicked.connect(self.buttonClick)
-        widgets.btn_widgets.clicked.connect(self.buttonClick)
-        widgets.btn_new.clicked.connect(self.buttonClick)
-        widgets.btn_save.clicked.connect(self.buttonClick)
 
         # 9.2 LOGIN
         widgets.num_btn_0.clicked.connect(self.buttonClick)
@@ -102,6 +97,7 @@ class MainWindow(QMainWindow):
         widgets.num_btn_9.clicked.connect(self.buttonClick)
         widgets.borrar_btn.clicked.connect(self.buttonClick)
         widgets.aceptar_btn.clicked.connect(lambda: Obtener_Empleado(widgets))
+        widgets.aceptar_btn.clicked.connect(lambda: ObtenerLicencias(widgets))
         widgets.motrec_btn.setVisible(False)
         widgets.motrec_btn.clicked.connect(self.buttonClick)
         widgets.vehiculos_tbl.setVisible(False)
@@ -123,6 +119,26 @@ class MainWindow(QMainWindow):
         # 9.6 LABEL BATERIA
         bateria = Obtener_estado_bateria()
         widgets.bateria_lbl.setText(f"Bateria: {bateria}")
+
+        # 9.7 RADIO BUTTONS
+        widgets.Q1.buttonClicked.connect(radio_button_clicked)
+        widgets.Q2.buttonClicked.connect(radio_button_clicked)
+        widgets.Q3.buttonClicked.connect(radio_button_clicked)
+        widgets.Q4.buttonClicked.connect(radio_button_clicked)
+        widgets.Q5.buttonClicked.connect(radio_button_clicked)
+        widgets.Q6.buttonClicked.connect(radio_button_clicked)
+        widgets.Q7.buttonClicked.connect(radio_button_clicked)
+        widgets.Q8.buttonClicked.connect(radio_button_clicked)
+        widgets.Q9.buttonClicked.connect(radio_button_clicked)
+        widgets.Q10.buttonClicked.connect(radio_button_clicked)
+        widgets.Q11.buttonClicked.connect(radio_button_clicked)
+        widgets.Q12.buttonClicked.connect(radio_button_clicked)
+        widgets.Q13.buttonClicked.connect(radio_button_clicked)
+        widgets.Q14.buttonClicked.connect(radio_button_clicked)
+        widgets.Q15.buttonClicked.connect(radio_button_clicked)
+
+        # 9.8 HOROMETRO
+        widgets.horometro_btn.clicked.connect(self.buttonClick)
 
         # 10. EXTRA LEFT BOX
         def openCloseLeftBox():
@@ -163,19 +179,6 @@ class MainWindow(QMainWindow):
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
-        if btnName == "btn_widgets":
-            widgets.stackedWidget.setCurrentWidget(widgets.widgets)
-            UIFunctions.resetStyle(self, btnName)
-            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
-
-        if btnName == "btn_new":
-            widgets.stackedWidget.setCurrentWidget(widgets.new_page) # SET PAGE
-            UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
-            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
-
-        if btnName == "btn_save":
-            print("Save BTN clicked!")
-
         # 16.2 BOTONES DEL LOGIN
         if btnName.startswith("num_btn"):
             number = btnName.split("_")[-1]
@@ -199,6 +202,10 @@ class MainWindow(QMainWindow):
         # 16.4 BOTONES CHECKLIST
         if btnName == "checklist_btn":
             widgets.stackedWidget.setCurrentWidget(widgets.checklist_page)
+
+        # 16.5 BOTONES HOROMETRO
+        if btnName == "horometro_btn":
+            widgets.stackedWidget.setCurrentWidget(widgets.horometro_page)
 
         print(f'Button "{btnName}" pressed!')
 

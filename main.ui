@@ -879,150 +879,6 @@ Button */
                   </property>
                  </widget>
                 </item>
-                <item>
-                 <widget class="QPushButton" name="btn_widgets">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-gamepad.png);</string>
-                  </property>
-                  <property name="text">
-                   <string>Widgets</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="btn_new">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-file.png);</string>
-                  </property>
-                  <property name="text">
-                   <string>New</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="btn_save">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-save.png)</string>
-                  </property>
-                  <property name="text">
-                   <string>Save</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="btn_exit">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-x.png);</string>
-                  </property>
-                  <property name="text">
-                   <string>Exit</string>
-                  </property>
-                 </widget>
-                </item>
                </layout>
               </widget>
              </item>
@@ -1831,856 +1687,9 @@ Button */
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>3</number>
+                      <number>1</number>
                      </property>
                      <widget class="QWidget" name="home">
-                      <property name="styleSheet">
-                       <string notr="true">background-image: url(:/images/images/images/PyDracula_vertical.png);
-background-position: center;
-background-repeat: no-repeat;</string>
-                      </property>
-                     </widget>
-                     <widget class="QWidget" name="widgets">
-                      <property name="styleSheet">
-                       <string notr="true">b</string>
-                      </property>
-                      <layout class="QVBoxLayout" name="verticalLayout">
-                       <property name="spacing">
-                        <number>10</number>
-                       </property>
-                       <property name="leftMargin">
-                        <number>10</number>
-                       </property>
-                       <property name="topMargin">
-                        <number>10</number>
-                       </property>
-                       <property name="rightMargin">
-                        <number>10</number>
-                       </property>
-                       <property name="bottomMargin">
-                        <number>10</number>
-                       </property>
-                       <item>
-                        <widget class="QFrame" name="row_1">
-                         <property name="frameShape">
-                          <enum>QFrame::StyledPanel</enum>
-                         </property>
-                         <property name="frameShadow">
-                          <enum>QFrame::Raised</enum>
-                         </property>
-                         <layout class="QVBoxLayout" name="verticalLayout_16">
-                          <property name="spacing">
-                           <number>0</number>
-                          </property>
-                          <property name="leftMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="topMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="rightMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="bottomMargin">
-                           <number>0</number>
-                          </property>
-                          <item>
-                           <widget class="QFrame" name="frame_div_content_1">
-                            <property name="minimumSize">
-                             <size>
-                              <width>0</width>
-                              <height>110</height>
-                             </size>
-                            </property>
-                            <property name="maximumSize">
-                             <size>
-                              <width>16777215</width>
-                              <height>110</height>
-                             </size>
-                            </property>
-                            <property name="frameShape">
-                             <enum>QFrame::NoFrame</enum>
-                            </property>
-                            <property name="frameShadow">
-                             <enum>QFrame::Raised</enum>
-                            </property>
-                            <layout class="QVBoxLayout" name="verticalLayout_17">
-                             <property name="spacing">
-                              <number>0</number>
-                             </property>
-                             <property name="leftMargin">
-                              <number>0</number>
-                             </property>
-                             <property name="topMargin">
-                              <number>0</number>
-                             </property>
-                             <property name="rightMargin">
-                              <number>0</number>
-                             </property>
-                             <property name="bottomMargin">
-                              <number>0</number>
-                             </property>
-                             <item>
-                              <widget class="QFrame" name="frame_title_wid_1">
-                               <property name="maximumSize">
-                                <size>
-                                 <width>16777215</width>
-                                 <height>35</height>
-                                </size>
-                               </property>
-                               <property name="frameShape">
-                                <enum>QFrame::StyledPanel</enum>
-                               </property>
-                               <property name="frameShadow">
-                                <enum>QFrame::Raised</enum>
-                               </property>
-                               <layout class="QVBoxLayout" name="verticalLayout_18">
-                                <item>
-                                 <widget class="QLabel" name="labelBoxBlenderInstalation">
-                                  <property name="font">
-                                   <font>
-                                    <family>Segoe UI</family>
-                                    <pointsize>10</pointsize>
-                                    <italic>false</italic>
-                                    <bold>false</bold>
-                                   </font>
-                                  </property>
-                                  <property name="styleSheet">
-                                   <string notr="true"/>
-                                  </property>
-                                  <property name="text">
-                                   <string>FILE BOX</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                               </layout>
-                              </widget>
-                             </item>
-                             <item>
-                              <widget class="QFrame" name="frame_content_wid_1">
-                               <property name="frameShape">
-                                <enum>QFrame::NoFrame</enum>
-                               </property>
-                               <property name="frameShadow">
-                                <enum>QFrame::Raised</enum>
-                               </property>
-                               <layout class="QHBoxLayout" name="horizontalLayout_9">
-                                <item>
-                                 <layout class="QGridLayout" name="gridLayout">
-                                  <property name="bottomMargin">
-                                   <number>0</number>
-                                  </property>
-                                  <item row="0" column="0">
-                                   <widget class="QLineEdit" name="lineEdit">
-                                    <property name="minimumSize">
-                                     <size>
-                                      <width>0</width>
-                                      <height>30</height>
-                                     </size>
-                                    </property>
-                                    <property name="styleSheet">
-                                     <string notr="true">background-color: rgb(33, 37, 43);</string>
-                                    </property>
-                                    <property name="text">
-                                     <string/>
-                                    </property>
-                                    <property name="placeholderText">
-                                     <string>Type here</string>
-                                    </property>
-                                   </widget>
-                                  </item>
-                                  <item row="0" column="1">
-                                   <widget class="QPushButton" name="pushButton">
-                                    <property name="minimumSize">
-                                     <size>
-                                      <width>150</width>
-                                      <height>30</height>
-                                     </size>
-                                    </property>
-                                    <property name="font">
-                                     <font>
-                                      <family>Segoe UI</family>
-                                      <pointsize>10</pointsize>
-                                      <italic>false</italic>
-                                      <bold>false</bold>
-                                     </font>
-                                    </property>
-                                    <property name="cursor">
-                                     <cursorShape>PointingHandCursor</cursorShape>
-                                    </property>
-                                    <property name="styleSheet">
-                                     <string notr="true">background-color: rgb(52, 59, 72);</string>
-                                    </property>
-                                    <property name="text">
-                                     <string>Open</string>
-                                    </property>
-                                    <property name="icon">
-                                     <iconset resource="resources.qrc">
-                                      <normaloff>:/icons/images/icons/cil-folder-open.png</normaloff>:/icons/images/icons/cil-folder-open.png</iconset>
-                                    </property>
-                                   </widget>
-                                  </item>
-                                  <item row="1" column="0" colspan="2">
-                                   <widget class="QLabel" name="labelVersion_3">
-                                    <property name="styleSheet">
-                                     <string notr="true">color: rgb(113, 126, 149);</string>
-                                    </property>
-                                    <property name="lineWidth">
-                                     <number>1</number>
-                                    </property>
-                                    <property name="text">
-                                     <string>Label description</string>
-                                    </property>
-                                    <property name="alignment">
-                                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                                    </property>
-                                   </widget>
-                                  </item>
-                                 </layout>
-                                </item>
-                               </layout>
-                              </widget>
-                             </item>
-                            </layout>
-                           </widget>
-                          </item>
-                         </layout>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QFrame" name="row_2">
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>150</height>
-                          </size>
-                         </property>
-                         <property name="frameShape">
-                          <enum>QFrame::StyledPanel</enum>
-                         </property>
-                         <property name="frameShadow">
-                          <enum>QFrame::Raised</enum>
-                         </property>
-                         <layout class="QVBoxLayout" name="verticalLayout_19">
-                          <item>
-                           <layout class="QGridLayout" name="gridLayout_2">
-                            <item row="0" column="4" rowspan="3">
-                             <widget class="QScrollBar" name="verticalScrollBar">
-                              <property name="styleSheet">
-                               <string notr="true"> QScrollBar:vertical { background: rgb(52, 59, 72); }
- QScrollBar:horizontal { background: rgb(52, 59, 72); }</string>
-                              </property>
-                              <property name="orientation">
-                               <enum>Qt::Vertical</enum>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="2" column="0" colspan="2">
-                             <widget class="QSlider" name="horizontalSlider">
-                              <property name="styleSheet">
-                               <string notr="true"/>
-                              </property>
-                              <property name="orientation">
-                               <enum>Qt::Horizontal</enum>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="1" column="6">
-                             <widget class="QCommandLinkButton" name="commandLinkButton">
-                              <property name="cursor">
-                               <cursorShape>PointingHandCursor</cursorShape>
-                              </property>
-                              <property name="styleSheet">
-                               <string notr="true"/>
-                              </property>
-                              <property name="text">
-                               <string>Link Button</string>
-                              </property>
-                              <property name="icon">
-                               <iconset resource="resources.qrc">
-                                <normaloff>:/icons/images/icons/cil-link.png</normaloff>:/icons/images/icons/cil-link.png</iconset>
-                              </property>
-                              <property name="description">
-                               <string>Link description</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="0" column="1">
-                             <widget class="QRadioButton" name="radioButton">
-                              <property name="styleSheet">
-                               <string notr="true"/>
-                              </property>
-                              <property name="text">
-                               <string>RadioButton</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="1" column="3">
-                             <widget class="QScrollBar" name="horizontalScrollBar">
-                              <property name="sizePolicy">
-                               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                                <horstretch>0</horstretch>
-                                <verstretch>0</verstretch>
-                               </sizepolicy>
-                              </property>
-                              <property name="styleSheet">
-                               <string notr="true"> QScrollBar:vertical { background: rgb(52, 59, 72); }
- QScrollBar:horizontal { background: rgb(52, 59, 72); }</string>
-                              </property>
-                              <property name="orientation">
-                               <enum>Qt::Horizontal</enum>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="0" column="2" rowspan="3">
-                             <widget class="QSlider" name="verticalSlider">
-                              <property name="styleSheet">
-                               <string notr="true"/>
-                              </property>
-                              <property name="orientation">
-                               <enum>Qt::Vertical</enum>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="0" column="0">
-                             <widget class="QCheckBox" name="checkBox">
-                              <property name="autoFillBackground">
-                               <bool>false</bool>
-                              </property>
-                              <property name="styleSheet">
-                               <string notr="true"/>
-                              </property>
-                              <property name="text">
-                               <string>CheckBox</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="0" column="5" rowspan="3">
-                             <widget class="QScrollArea" name="scrollArea">
-                              <property name="styleSheet">
-                               <string notr="true"> QScrollBar:vertical {
-    background: rgb(52, 59, 72);
- }
- QScrollBar:horizontal {
-    background: rgb(52, 59, 72);
- }</string>
-                              </property>
-                              <property name="frameShape">
-                               <enum>QFrame::NoFrame</enum>
-                              </property>
-                              <property name="verticalScrollBarPolicy">
-                               <enum>Qt::ScrollBarAlwaysOn</enum>
-                              </property>
-                              <property name="horizontalScrollBarPolicy">
-                               <enum>Qt::ScrollBarAsNeeded</enum>
-                              </property>
-                              <property name="widgetResizable">
-                               <bool>true</bool>
-                              </property>
-                              <widget class="QWidget" name="scrollAreaWidgetContents">
-                               <property name="geometry">
-                                <rect>
-                                 <x>0</x>
-                                 <y>0</y>
-                                 <width>218</width>
-                                 <height>218</height>
-                                </rect>
-                               </property>
-                               <property name="styleSheet">
-                                <string notr="true"> QScrollBar:vertical {
-	border: none;
-    background: rgb(52, 59, 72);
-    width: 14px;
-    margin: 21px 0 21px 0;
-	border-radius: 0px;
- }</string>
-                               </property>
-                               <layout class="QHBoxLayout" name="horizontalLayout_11">
-                                <item>
-                                 <widget class="QPlainTextEdit" name="plainTextEdit">
-                                  <property name="minimumSize">
-                                   <size>
-                                    <width>200</width>
-                                    <height>200</height>
-                                   </size>
-                                  </property>
-                                  <property name="styleSheet">
-                                   <string notr="true">background-color: rgb(33, 37, 43);</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                               </layout>
-                              </widget>
-                             </widget>
-                            </item>
-                            <item row="1" column="0" colspan="2">
-                             <widget class="QComboBox" name="comboBox">
-                              <property name="font">
-                               <font>
-                                <family>Segoe UI</family>
-                                <pointsize>10</pointsize>
-                                <italic>false</italic>
-                                <bold>false</bold>
-                               </font>
-                              </property>
-                              <property name="autoFillBackground">
-                               <bool>false</bool>
-                              </property>
-                              <property name="styleSheet">
-                               <string notr="true">background-color: rgb(33, 37, 43);</string>
-                              </property>
-                              <property name="iconSize">
-                               <size>
-                                <width>16</width>
-                                <height>16</height>
-                               </size>
-                              </property>
-                              <property name="frame">
-                               <bool>true</bool>
-                              </property>
-                              <item>
-                               <property name="text">
-                                <string>Test 1</string>
-                               </property>
-                              </item>
-                              <item>
-                               <property name="text">
-                                <string>Test 2</string>
-                               </property>
-                              </item>
-                              <item>
-                               <property name="text">
-                                <string>Test 3</string>
-                               </property>
-                              </item>
-                             </widget>
-                            </item>
-                           </layout>
-                          </item>
-                         </layout>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QFrame" name="row_3">
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>150</height>
-                          </size>
-                         </property>
-                         <property name="frameShape">
-                          <enum>QFrame::StyledPanel</enum>
-                         </property>
-                         <property name="frameShadow">
-                          <enum>QFrame::Raised</enum>
-                         </property>
-                         <layout class="QHBoxLayout" name="horizontalLayout_12">
-                          <property name="spacing">
-                           <number>0</number>
-                          </property>
-                          <property name="leftMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="topMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="rightMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="bottomMargin">
-                           <number>0</number>
-                          </property>
-                          <item>
-                           <widget class="QTableWidget" name="tableWidget">
-                            <property name="sizePolicy">
-                             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                              <horstretch>0</horstretch>
-                              <verstretch>0</verstretch>
-                             </sizepolicy>
-                            </property>
-                            <property name="palette">
-                             <palette>
-                              <active>
-                               <colorrole role="WindowText">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="255">
-                                  <red>221</red>
-                                  <green>221</green>
-                                  <blue>221</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="Button">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="0">
-                                  <red>0</red>
-                                  <green>0</green>
-                                  <blue>0</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="Text">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="255">
-                                  <red>221</red>
-                                  <green>221</green>
-                                  <blue>221</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="ButtonText">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="255">
-                                  <red>221</red>
-                                  <green>221</green>
-                                  <blue>221</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="Base">
-                                <brush brushstyle="NoBrush">
-                                 <color alpha="255">
-                                  <red>0</red>
-                                  <green>0</green>
-                                  <blue>0</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="Window">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="0">
-                                  <red>0</red>
-                                  <green>0</green>
-                                  <blue>0</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="PlaceholderText">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="255">
-                                  <red>221</red>
-                                  <green>221</green>
-                                  <blue>221</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                              </active>
-                              <inactive>
-                               <colorrole role="WindowText">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="255">
-                                  <red>221</red>
-                                  <green>221</green>
-                                  <blue>221</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="Button">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="0">
-                                  <red>0</red>
-                                  <green>0</green>
-                                  <blue>0</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="Text">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="255">
-                                  <red>221</red>
-                                  <green>221</green>
-                                  <blue>221</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="ButtonText">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="255">
-                                  <red>221</red>
-                                  <green>221</green>
-                                  <blue>221</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="Base">
-                                <brush brushstyle="NoBrush">
-                                 <color alpha="255">
-                                  <red>0</red>
-                                  <green>0</green>
-                                  <blue>0</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="Window">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="0">
-                                  <red>0</red>
-                                  <green>0</green>
-                                  <blue>0</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="PlaceholderText">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="255">
-                                  <red>221</red>
-                                  <green>221</green>
-                                  <blue>221</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                              </inactive>
-                              <disabled>
-                               <colorrole role="WindowText">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="255">
-                                  <red>221</red>
-                                  <green>221</green>
-                                  <blue>221</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="Button">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="0">
-                                  <red>0</red>
-                                  <green>0</green>
-                                  <blue>0</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="Text">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="255">
-                                  <red>221</red>
-                                  <green>221</green>
-                                  <blue>221</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="ButtonText">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="255">
-                                  <red>221</red>
-                                  <green>221</green>
-                                  <blue>221</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="Base">
-                                <brush brushstyle="NoBrush">
-                                 <color alpha="255">
-                                  <red>0</red>
-                                  <green>0</green>
-                                  <blue>0</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="Window">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="0">
-                                  <red>0</red>
-                                  <green>0</green>
-                                  <blue>0</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                               <colorrole role="PlaceholderText">
-                                <brush brushstyle="SolidPattern">
-                                 <color alpha="255">
-                                  <red>221</red>
-                                  <green>221</green>
-                                  <blue>221</blue>
-                                 </color>
-                                </brush>
-                               </colorrole>
-                              </disabled>
-                             </palette>
-                            </property>
-                            <property name="frameShape">
-                             <enum>QFrame::NoFrame</enum>
-                            </property>
-                            <property name="verticalScrollBarPolicy">
-                             <enum>Qt::ScrollBarAlwaysOn</enum>
-                            </property>
-                            <property name="sizeAdjustPolicy">
-                             <enum>QAbstractScrollArea::AdjustToContents</enum>
-                            </property>
-                            <property name="editTriggers">
-                             <set>QAbstractItemView::NoEditTriggers</set>
-                            </property>
-                            <property name="selectionMode">
-                             <enum>QAbstractItemView::SingleSelection</enum>
-                            </property>
-                            <property name="selectionBehavior">
-                             <enum>QAbstractItemView::SelectRows</enum>
-                            </property>
-                            <property name="showGrid">
-                             <bool>true</bool>
-                            </property>
-                            <property name="gridStyle">
-                             <enum>Qt::SolidLine</enum>
-                            </property>
-                            <property name="sortingEnabled">
-                             <bool>false</bool>
-                            </property>
-                            <attribute name="horizontalHeaderVisible">
-                             <bool>false</bool>
-                            </attribute>
-                            <attribute name="horizontalHeaderCascadingSectionResizes">
-                             <bool>true</bool>
-                            </attribute>
-                            <attribute name="horizontalHeaderDefaultSectionSize">
-                             <number>200</number>
-                            </attribute>
-                            <attribute name="horizontalHeaderStretchLastSection">
-                             <bool>true</bool>
-                            </attribute>
-                            <attribute name="verticalHeaderVisible">
-                             <bool>false</bool>
-                            </attribute>
-                            <attribute name="verticalHeaderCascadingSectionResizes">
-                             <bool>false</bool>
-                            </attribute>
-                            <attribute name="verticalHeaderHighlightSections">
-                             <bool>false</bool>
-                            </attribute>
-                            <attribute name="verticalHeaderStretchLastSection">
-                             <bool>true</bool>
-                            </attribute>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                             <property name="font">
-                              <font>
-                               <family>Segoe UI</family>
-                              </font>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <row>
-                             <property name="text">
-                              <string>New Row</string>
-                             </property>
-                            </row>
-                            <column>
-                             <property name="text">
-                              <string>0</string>
-                             </property>
-                            </column>
-                            <column>
-                             <property name="text">
-                              <string>1</string>
-                             </property>
-                            </column>
-                            <column>
-                             <property name="text">
-                              <string>2</string>
-                             </property>
-                            </column>
-                            <column>
-                             <property name="text">
-                              <string>3</string>
-                             </property>
-                            </column>
-                            <item row="0" column="0">
-                             <property name="text">
-                              <string>Test</string>
-                             </property>
-                            </item>
-                            <item row="0" column="1">
-                             <property name="text">
-                              <string>Text</string>
-                             </property>
-                            </item>
-                            <item row="0" column="2">
-                             <property name="text">
-                              <string>Cell</string>
-                             </property>
-                            </item>
-                            <item row="0" column="3">
-                             <property name="text">
-                              <string>Line</string>
-                             </property>
-                            </item>
-                           </widget>
-                          </item>
-                         </layout>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                     <widget class="QWidget" name="new_page">
                       <layout class="QGridLayout" name="gridLayout_9">
                        <item row="1" column="1" rowspan="2">
                         <widget class="QFrame" name="frame_3">
@@ -2783,25 +1792,6 @@ background-repeat: no-repeat;</string>
                           <enum>QFrame::Raised</enum>
                          </property>
                          <layout class="QGridLayout" name="gridLayout_12">
-                          <item row="1" column="0">
-                           <widget class="QLabel" name="photo_lbl">
-                            <property name="minimumSize">
-                             <size>
-                              <width>180</width>
-                              <height>190</height>
-                             </size>
-                            </property>
-                            <property name="maximumSize">
-                             <size>
-                              <width>220</width>
-                              <height>245</height>
-                             </size>
-                            </property>
-                            <property name="text">
-                             <string/>
-                            </property>
-                           </widget>
-                          </item>
                           <item row="0" column="0" colspan="2">
                            <widget class="QLabel" name="nombre_lbl">
                             <property name="maximumSize">
@@ -2815,21 +1805,34 @@ background-repeat: no-repeat;</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="1" column="1">
-                           <spacer name="horizontalSpacer">
-                            <property name="orientation">
-                             <enum>Qt::Horizontal</enum>
-                            </property>
-                            <property name="sizeType">
-                             <enum>QSizePolicy::Preferred</enum>
-                            </property>
-                            <property name="sizeHint" stdset="0">
+                          <item row="1" column="0">
+                           <widget class="QLabel" name="photo_lbl">
+                            <property name="minimumSize">
                              <size>
-                              <width>40</width>
-                              <height>20</height>
+                              <width>180</width>
+                              <height>190</height>
                              </size>
                             </property>
-                           </spacer>
+                            <property name="maximumSize">
+                             <size>
+                              <width>180</width>
+                              <height>190</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1">
+                           <widget class="QTableWidget" name="licencias_tbl">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                           </widget>
                           </item>
                          </layout>
                         </widget>
@@ -3188,6 +2191,17 @@ background-repeat: no-repeat;</string>
                              <height>66</height>
                             </size>
                            </property>
+                           <property name="font">
+                            <font>
+                             <family>Segoe UI</family>
+                             <pointsize>-1</pointsize>
+                             <italic>false</italic>
+                             <bold>false</bold>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel { font-size: 48px; color: rgb(113, 126, 149); padding-left: 10px; padding-right: 10px; padding-bottom: 2px; }</string>
+                           </property>
                            <property name="text">
                             <string/>
                            </property>
@@ -3319,88 +2333,69 @@ background-repeat: no-repeat;</string>
                      </widget>
                      <widget class="QWidget" name="checklist_page">
                       <layout class="QGridLayout" name="gridLayout_4">
-                       <item row="14" column="0">
-                        <widget class="QLabel" name="pregunta_13">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="8" column="1">
-                        <widget class="QRadioButton" name="radioButton_12">
+                       <item row="11" column="3">
+                        <widget class="QRadioButton" name="radioButton_41">
                          <property name="maximumSize">
                           <size>
                            <width>100</width>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
-                          <string>OK</string>
+                          <string>NA</string>
                          </property>
                          <attribute name="buttonGroup">
-                          <string notr="true">Q7</string>
+                          <string notr="true">Q10</string>
                          </attribute>
                         </widget>
                        </item>
-                       <item row="8" column="0">
-                        <widget class="QLabel" name="pregunta_7">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="6" column="2">
-                        <widget class="QRadioButton" name="radioButton_23">
+                       <item row="16" column="2">
+                        <widget class="QRadioButton" name="radioButton_33">
                          <property name="maximumSize">
                           <size>
                            <width>100</width>
                            <height>35</height>
                           </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
                          </property>
                          <property name="text">
                           <string>NOK</string>
                          </property>
                          <attribute name="buttonGroup">
-                          <string notr="true">Q5</string>
+                          <string notr="true">Q15</string>
                          </attribute>
                         </widget>
                        </item>
-                       <item row="4" column="3">
-                        <widget class="QRadioButton" name="radioButton_35">
+                       <item row="13" column="3">
+                        <widget class="QRadioButton" name="radioButton_43">
                          <property name="maximumSize">
                           <size>
                            <width>100</width>
                            <height>35</height>
                           </size>
                          </property>
-                         <property name="text">
-                          <string>NA</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q4</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="16" column="0">
-                        <widget class="QLabel" name="pregunta_15">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="8" column="3">
-                        <widget class="QRadioButton" name="radioButton_38">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
                          </property>
                          <property name="text">
                           <string>NA</string>
                          </property>
                          <attribute name="buttonGroup">
-                          <string notr="true">Q7</string>
+                          <string notr="true">Q12</string>
                          </attribute>
                         </widget>
                        </item>
@@ -3412,6 +2407,12 @@ background-repeat: no-repeat;</string>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
                           <string>NOK</string>
                          </property>
@@ -3420,148 +2421,15 @@ background-repeat: no-repeat;</string>
                          </attribute>
                         </widget>
                        </item>
-                       <item row="9" column="0">
-                        <widget class="QLabel" name="pregunta_8">
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="pregunta_2">
                          <property name="text">
                           <string/>
                          </property>
                         </widget>
                        </item>
-                       <item row="7" column="1">
-                        <widget class="QRadioButton" name="radioButton_11">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>OK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q6</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="7" column="2">
-                        <widget class="QRadioButton" name="radioButton_24">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NOK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q6</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="12" column="1">
-                        <widget class="QRadioButton" name="radioButton_16">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>OK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q11</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="9" column="1">
-                        <widget class="QRadioButton" name="radioButton_13">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>OK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q8</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="13" column="0">
-                        <widget class="QLabel" name="pregunta_12">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="1" column="2">
-                        <widget class="QRadioButton" name="radioButton_3">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NOK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q2</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="14" column="1">
-                        <widget class="QRadioButton" name="radioButton_20">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>OK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q13</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="7" column="0">
-                        <widget class="QLabel" name="pregunta_6">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="13" column="1">
-                        <widget class="QRadioButton" name="radioButton_17">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>OK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q12</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="6" column="0">
-                        <widget class="QLabel" name="pregunta_5">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="15" column="0">
-                        <widget class="QLabel" name="pregunta_14">
+                       <item row="14" column="0">
+                        <widget class="QLabel" name="pregunta_13">
                          <property name="text">
                           <string/>
                          </property>
@@ -3575,6 +2443,12 @@ background-repeat: no-repeat;</string>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
                           <string>OK</string>
                          </property>
@@ -3583,58 +2457,127 @@ background-repeat: no-repeat;</string>
                          </attribute>
                         </widget>
                        </item>
-                       <item row="10" column="0">
-                        <widget class="QLabel" name="pregunta_9">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="15" column="2">
-                        <widget class="QRadioButton" name="radioButton_32">
+                       <item row="12" column="2">
+                        <widget class="QRadioButton" name="radioButton_29">
                          <property name="maximumSize">
                           <size>
                            <width>100</width>
                            <height>35</height>
                           </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
                          </property>
                          <property name="text">
                           <string>NOK</string>
                          </property>
                          <attribute name="buttonGroup">
-                          <string notr="true">Q14</string>
+                          <string notr="true">Q11</string>
                          </attribute>
                         </widget>
                        </item>
-                       <item row="1" column="3">
-                        <widget class="QRadioButton" name="radioButton_4">
+                       <item row="10" column="2">
+                        <widget class="QRadioButton" name="radioButton_27">
                          <property name="maximumSize">
                           <size>
                            <width>100</width>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
-                          <string>NA</string>
+                          <string>NOK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q9</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="9" column="0">
+                        <widget class="QLabel" name="pregunta_8">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="16" column="0">
+                        <widget class="QLabel" name="pregunta_15">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QRadioButton" name="radioButton_3">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NOK</string>
                          </property>
                          <attribute name="buttonGroup">
                           <string notr="true">Q2</string>
                          </attribute>
                         </widget>
                        </item>
-                       <item row="10" column="3">
-                        <widget class="QRadioButton" name="radioButton_40">
+                       <item row="15" column="3">
+                        <widget class="QRadioButton" name="radioButton_45">
                          <property name="maximumSize">
                           <size>
                            <width>100</width>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
                           <string>NA</string>
                          </property>
                          <attribute name="buttonGroup">
-                          <string notr="true">Q9</string>
+                          <string notr="true">Q14</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="9" column="3">
+                        <widget class="QRadioButton" name="radioButton_39">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NA</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q8</string>
                          </attribute>
                         </widget>
                        </item>
@@ -3646,6 +2589,12 @@ background-repeat: no-repeat;</string>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
                           <string>NOK</string>
                          </property>
@@ -3654,137 +2603,30 @@ background-repeat: no-repeat;</string>
                          </attribute>
                         </widget>
                        </item>
-                       <item row="13" column="2">
-                        <widget class="QRadioButton" name="radioButton_30">
+                       <item row="3" column="1">
+                        <widget class="QRadioButton" name="radioButton_8">
                          <property name="maximumSize">
                           <size>
                            <width>100</width>
                            <height>35</height>
                           </size>
                          </property>
-                         <property name="text">
-                          <string>NOK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q12</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="12" column="0">
-                        <widget class="QLabel" name="pregunta_11">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="10" column="2">
-                        <widget class="QRadioButton" name="radioButton_27">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NOK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q9</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="15" column="1">
-                        <widget class="QRadioButton" name="radioButton_18">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
                          </property>
                          <property name="text">
                           <string>OK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q14</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="7" column="3">
-                        <widget class="QRadioButton" name="radioButton_37">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NA</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q6</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="16" column="2">
-                        <widget class="QRadioButton" name="radioButton_33">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NOK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q15</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="0" column="1">
-                        <widget class="QRadioButton" name="radioButton_5">
-                         <property name="text">
-                          <string>OK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q1</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="10" column="1">
-                        <widget class="QRadioButton" name="radioButton_14">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>OK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q9</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="3" column="3">
-                        <widget class="QRadioButton" name="radioButton_34">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NA</string>
                          </property>
                          <attribute name="buttonGroup">
                           <string notr="true">Q3</string>
                          </attribute>
                         </widget>
                        </item>
-                       <item row="4" column="0">
-                        <widget class="QLabel" name="pregunta_4">
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="pregunta_1">
                          <property name="text">
                           <string/>
                          </property>
@@ -3798,6 +2640,12 @@ background-repeat: no-repeat;</string>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
                           <string>NOK</string>
                          </property>
@@ -3806,16 +2654,88 @@ background-repeat: no-repeat;</string>
                          </attribute>
                         </widget>
                        </item>
-                       <item row="0" column="2">
-                        <widget class="QRadioButton" name="radioButton_6">
+                       <item row="3" column="3">
+                        <widget class="QRadioButton" name="radioButton_34">
                          <property name="maximumSize">
                           <size>
                            <width>100</width>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NA</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q3</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="11" column="2">
+                        <widget class="QRadioButton" name="radioButton_28">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
                           <string>NOK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q10</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="11" column="1">
+                        <widget class="QRadioButton" name="radioButton_15">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>OK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q10</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="0" column="3">
+                        <widget class="QRadioButton" name="radioButton_7">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NA</string>
                          </property>
                          <attribute name="buttonGroup">
                           <string notr="true">Q1</string>
@@ -3830,231 +2750,17 @@ background-repeat: no-repeat;</string>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
                           <string>OK</string>
                          </property>
                          <attribute name="buttonGroup">
                           <string notr="true">Q5</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="9" column="3">
-                        <widget class="QRadioButton" name="radioButton_39">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NA</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q8</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="6" column="3">
-                        <widget class="QRadioButton" name="radioButton_36">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NA</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q5</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="12" column="2">
-                        <widget class="QRadioButton" name="radioButton_29">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NOK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q11</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="3" column="0">
-                        <widget class="QLabel" name="pregunta_3">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="4" column="2">
-                        <widget class="QRadioButton" name="radioButton_22">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NOK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q4</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="4" column="1">
-                        <widget class="QRadioButton" name="radioButton_9">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>OK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q4</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="11" column="0">
-                        <widget class="QLabel" name="pregunta_10">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="0" column="0">
-                        <widget class="QLabel" name="pregunta_1">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="11" column="2">
-                        <widget class="QRadioButton" name="radioButton_28">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NOK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q10</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="14" column="2">
-                        <widget class="QRadioButton" name="radioButton_31">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NOK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q13</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="11" column="1">
-                        <widget class="QRadioButton" name="radioButton_15">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>OK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q10</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="16" column="1">
-                        <widget class="QRadioButton" name="radioButton_19">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>OK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q15</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="3" column="1">
-                        <widget class="QRadioButton" name="radioButton_8">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>OK</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q3</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="1" column="0">
-                        <widget class="QLabel" name="pregunta_2">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="0" column="3">
-                        <widget class="QRadioButton" name="radioButton_7">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NA</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q1</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="11" column="3">
-                        <widget class="QRadioButton" name="radioButton_41">
-                         <property name="maximumSize">
-                          <size>
-                           <width>100</width>
-                           <height>35</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>NA</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">Q10</string>
                          </attribute>
                         </widget>
                        </item>
@@ -4066,6 +2772,12 @@ background-repeat: no-repeat;</string>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
                           <string>NA</string>
                          </property>
@@ -4074,19 +2786,231 @@ background-repeat: no-repeat;</string>
                          </attribute>
                         </widget>
                        </item>
-                       <item row="13" column="3">
-                        <widget class="QRadioButton" name="radioButton_43">
+                       <item row="4" column="3">
+                        <widget class="QRadioButton" name="radioButton_35">
                          <property name="maximumSize">
                           <size>
                            <width>100</width>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
                           <string>NA</string>
                          </property>
                          <attribute name="buttonGroup">
+                          <string notr="true">Q4</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="7" column="2">
+                        <widget class="QRadioButton" name="radioButton_24">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NOK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q6</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QRadioButton" name="radioButton_5">
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>OK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q1</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="0" column="2">
+                        <widget class="QRadioButton" name="radioButton_6">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NOK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q1</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="4" column="2">
+                        <widget class="QRadioButton" name="radioButton_22">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NOK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q4</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="13" column="2">
+                        <widget class="QRadioButton" name="radioButton_30">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NOK</string>
+                         </property>
+                         <attribute name="buttonGroup">
                           <string notr="true">Q12</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="7" column="3">
+                        <widget class="QRadioButton" name="radioButton_37">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NA</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q6</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="14" column="1">
+                        <widget class="QRadioButton" name="radioButton_20">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>OK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q13</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QLabel" name="pregunta_4">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="13" column="0">
+                        <widget class="QLabel" name="pregunta_12">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="10" column="1">
+                        <widget class="QRadioButton" name="radioButton_14">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>OK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q9</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="16" column="1">
+                        <widget class="QRadioButton" name="radioButton_19">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>OK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q15</string>
                          </attribute>
                         </widget>
                        </item>
@@ -4098,6 +3022,12 @@ background-repeat: no-repeat;</string>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
                           <string>NA</string>
                          </property>
@@ -4106,16 +3036,175 @@ background-repeat: no-repeat;</string>
                          </attribute>
                         </widget>
                        </item>
-                       <item row="15" column="3">
-                        <widget class="QRadioButton" name="radioButton_45">
+                       <item row="10" column="0">
+                        <widget class="QLabel" name="pregunta_9">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="12" column="1">
+                        <widget class="QRadioButton" name="radioButton_16">
                          <property name="maximumSize">
                           <size>
                            <width>100</width>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>OK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q11</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="15" column="1">
+                        <widget class="QRadioButton" name="radioButton_18">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>OK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q14</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="7" column="0">
+                        <widget class="QLabel" name="pregunta_6">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="15" column="0">
+                        <widget class="QLabel" name="pregunta_14">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="14" column="2">
+                        <widget class="QRadioButton" name="radioButton_31">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NOK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q13</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="10" column="3">
+                        <widget class="QRadioButton" name="radioButton_40">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
                           <string>NA</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q9</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="QRadioButton" name="radioButton_9">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>OK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q4</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="8" column="1">
+                        <widget class="QRadioButton" name="radioButton_12">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>OK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q7</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="15" column="2">
+                        <widget class="QRadioButton" name="radioButton_32">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NOK</string>
                          </property>
                          <attribute name="buttonGroup">
                           <string notr="true">Q14</string>
@@ -4130,12 +3219,575 @@ background-repeat: no-repeat;</string>
                            <height>35</height>
                           </size>
                          </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
                          <property name="text">
                           <string>NA</string>
                          </property>
                          <attribute name="buttonGroup">
                           <string notr="true">Q15</string>
                          </attribute>
+                        </widget>
+                       </item>
+                       <item row="8" column="0">
+                        <widget class="QLabel" name="pregunta_7">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="6" column="3">
+                        <widget class="QRadioButton" name="radioButton_36">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NA</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q5</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QLabel" name="pregunta_3">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="11" column="0">
+                        <widget class="QLabel" name="pregunta_10">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="7" column="1">
+                        <widget class="QRadioButton" name="radioButton_11">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>OK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q6</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="8" column="3">
+                        <widget class="QRadioButton" name="radioButton_38">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NA</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q7</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="6" column="0">
+                        <widget class="QLabel" name="pregunta_5">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="3">
+                        <widget class="QRadioButton" name="radioButton_4">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NA</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q2</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="6" column="2">
+                        <widget class="QRadioButton" name="radioButton_23">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(130, 94, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>NOK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q5</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="13" column="1">
+                        <widget class="QRadioButton" name="radioButton_17">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>OK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q12</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="9" column="1">
+                        <widget class="QRadioButton" name="radioButton_13">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QRadioButton::indicator:checked {
+    background: 3px solid rgb(98, 130, 94);
+	border: 3px solid rgb(52, 59, 72);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>OK</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">Q8</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="12" column="0">
+                        <widget class="QLabel" name="pregunta_11">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="17" column="3">
+                        <widget class="QPushButton" name="horometro_btn">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>Siguiente</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="horometro_page">
+                      <layout class="QGridLayout" name="gridLayout_2">
+                       <item row="1" column="0">
+                        <widget class="QFrame" name="frame_5">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QHBoxLayout" name="horizontalLayout_6">
+                          <item>
+                           <layout class="QGridLayout" name="gridLayout">
+                            <item row="3" column="0">
+                             <spacer name="horizontalSpacer">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeType">
+                               <enum>QSizePolicy::Preferred</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                            <item row="3" column="2">
+                             <widget class="QPushButton" name="h_5">
+                              <property name="minimumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>5</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="3" column="1">
+                             <widget class="QPushButton" name="h_4">
+                              <property name="minimumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>4</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="0" column="1">
+                             <spacer name="verticalSpacer_5">
+                              <property name="orientation">
+                               <enum>Qt::Vertical</enum>
+                              </property>
+                              <property name="sizeType">
+                               <enum>QSizePolicy::Preferred</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>20</width>
+                                <height>40</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                            <item row="4" column="3">
+                             <widget class="QPushButton" name="h_9">
+                              <property name="minimumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>9</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="2" column="3">
+                             <widget class="QPushButton" name="h_3">
+                              <property name="minimumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>3</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="4" column="1">
+                             <widget class="QPushButton" name="h_7">
+                              <property name="minimumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>7</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="4" column="2">
+                             <widget class="QPushButton" name="h_8">
+                              <property name="minimumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>8</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="2" column="1">
+                             <widget class="QPushButton" name="h_1">
+                              <property name="minimumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>1</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="5" column="1">
+                             <widget class="QPushButton" name="h_0">
+                              <property name="minimumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>0</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="6" column="1" colspan="3">
+                             <widget class="QPushButton" name="haceptar_btn">
+                              <property name="minimumSize">
+                               <size>
+                                <width>284</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>284</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>ACEPTAR</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="5" column="2" colspan="2">
+                             <widget class="QPushButton" name="hborrar_btn">
+                              <property name="minimumSize">
+                               <size>
+                                <width>188</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>188</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>BORRAR</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="1" column="1" colspan="3">
+                             <widget class="QLineEdit" name="horometro_tbx">
+                              <property name="minimumSize">
+                               <size>
+                                <width>284</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>284</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="2" column="2">
+                             <widget class="QPushButton" name="h_2">
+                              <property name="minimumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>2</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="3" column="3">
+                             <widget class="QPushButton" name="h_6">
+                              <property name="minimumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>90</width>
+                                <height>66</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>6</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="7" column="1">
+                             <spacer name="verticalSpacer_6">
+                              <property name="orientation">
+                               <enum>Qt::Vertical</enum>
+                              </property>
+                              <property name="sizeType">
+                               <enum>QSizePolicy::Preferred</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>20</width>
+                                <height>40</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                            <item row="3" column="4">
+                             <spacer name="horizontalSpacer_5">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeType">
+                               <enum>QSizePolicy::Preferred</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                            <item row="0" column="0">
+                             <widget class="QLabel" name="label">
+                              <property name="text">
+                               <string/>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="7" column="4">
+                             <widget class="QLabel" name="label_2">
+                              <property name="text">
+                               <string/>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_3">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>HOROMETRO:</string>
+                         </property>
                         </widget>
                        </item>
                       </layout>
@@ -4491,20 +4143,20 @@ background-repeat: no-repeat;</string>
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="Q14"/>
-  <buttongroup name="Q7"/>
-  <buttongroup name="Q10"/>
-  <buttongroup name="Q8"/>
+  <buttongroup name="Q1"/>
   <buttongroup name="Q12"/>
   <buttongroup name="Q4"/>
   <buttongroup name="Q3"/>
   <buttongroup name="Q15"/>
+  <buttongroup name="Q10"/>
+  <buttongroup name="Q7"/>
+  <buttongroup name="Q2"/>
+  <buttongroup name="Q8"/>
+  <buttongroup name="Q14"/>
   <buttongroup name="Q9"/>
   <buttongroup name="Q13"/>
-  <buttongroup name="Q1"/>
-  <buttongroup name="Q5"/>
-  <buttongroup name="Q2"/>
   <buttongroup name="Q11"/>
+  <buttongroup name="Q5"/>
   <buttongroup name="Q6"/>
  </buttongroups>
 </ui>
