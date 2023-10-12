@@ -688,7 +688,7 @@ Button */
               </font>
              </property>
              <property name="text">
-              <string>PyDracula</string>
+              <string>Kanban Python</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -1687,7 +1687,7 @@ Button */
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>1</number>
+                      <number>0</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <layout class="QGridLayout" name="gridLayout_9">
@@ -3467,7 +3467,7 @@ Button */
                              </spacer>
                             </item>
                             <item row="3" column="2">
-                             <widget class="QPushButton" name="h_5">
+                             <widget class="QPushButton" name="btn_h_5">
                               <property name="minimumSize">
                                <size>
                                 <width>90</width>
@@ -3486,7 +3486,7 @@ Button */
                              </widget>
                             </item>
                             <item row="3" column="1">
-                             <widget class="QPushButton" name="h_4">
+                             <widget class="QPushButton" name="btn_h_4">
                               <property name="minimumSize">
                                <size>
                                 <width>90</width>
@@ -3521,7 +3521,7 @@ Button */
                              </spacer>
                             </item>
                             <item row="4" column="3">
-                             <widget class="QPushButton" name="h_9">
+                             <widget class="QPushButton" name="btn_h_9">
                               <property name="minimumSize">
                                <size>
                                 <width>90</width>
@@ -3540,7 +3540,7 @@ Button */
                              </widget>
                             </item>
                             <item row="2" column="3">
-                             <widget class="QPushButton" name="h_3">
+                             <widget class="QPushButton" name="btn_h_3">
                               <property name="minimumSize">
                                <size>
                                 <width>90</width>
@@ -3559,7 +3559,7 @@ Button */
                              </widget>
                             </item>
                             <item row="4" column="1">
-                             <widget class="QPushButton" name="h_7">
+                             <widget class="QPushButton" name="btn_h_7">
                               <property name="minimumSize">
                                <size>
                                 <width>90</width>
@@ -3578,7 +3578,7 @@ Button */
                              </widget>
                             </item>
                             <item row="4" column="2">
-                             <widget class="QPushButton" name="h_8">
+                             <widget class="QPushButton" name="btn_h_8">
                               <property name="minimumSize">
                                <size>
                                 <width>90</width>
@@ -3597,7 +3597,7 @@ Button */
                              </widget>
                             </item>
                             <item row="2" column="1">
-                             <widget class="QPushButton" name="h_1">
+                             <widget class="QPushButton" name="btn_h_1">
                               <property name="minimumSize">
                                <size>
                                 <width>90</width>
@@ -3616,7 +3616,7 @@ Button */
                              </widget>
                             </item>
                             <item row="5" column="1">
-                             <widget class="QPushButton" name="h_0">
+                             <widget class="QPushButton" name="btn_h_0">
                               <property name="minimumSize">
                                <size>
                                 <width>90</width>
@@ -3689,7 +3689,7 @@ Button */
                              </widget>
                             </item>
                             <item row="2" column="2">
-                             <widget class="QPushButton" name="h_2">
+                             <widget class="QPushButton" name="btn_h_2">
                               <property name="minimumSize">
                                <size>
                                 <width>90</width>
@@ -3708,7 +3708,7 @@ Button */
                              </widget>
                             </item>
                             <item row="3" column="3">
-                             <widget class="QPushButton" name="h_6">
+                             <widget class="QPushButton" name="btn_h_6">
                               <property name="minimumSize">
                                <size>
                                 <width>90</width>
@@ -4143,20 +4143,20 @@ Button */
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="Q1"/>
-  <buttongroup name="Q12"/>
-  <buttongroup name="Q4"/>
-  <buttongroup name="Q3"/>
-  <buttongroup name="Q15"/>
-  <buttongroup name="Q10"/>
-  <buttongroup name="Q7"/>
-  <buttongroup name="Q2"/>
-  <buttongroup name="Q8"/>
-  <buttongroup name="Q14"/>
-  <buttongroup name="Q9"/>
-  <buttongroup name="Q13"/>
   <buttongroup name="Q11"/>
   <buttongroup name="Q5"/>
+  <buttongroup name="Q8"/>
+  <buttongroup name="Q7"/>
+  <buttongroup name="Q2"/>
+  <buttongroup name="Q4"/>
+  <buttongroup name="Q10"/>
+  <buttongroup name="Q13"/>
+  <buttongroup name="Q15"/>
+  <buttongroup name="Q12"/>
   <buttongroup name="Q6"/>
+  <buttongroup name="Q1"/>
+  <buttongroup name="Q14"/>
+  <buttongroup name="Q9"/>
+  <buttongroup name="Q3"/>
  </buttongroups>
 </ui>

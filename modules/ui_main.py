@@ -1875,65 +1875,65 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addItem(self.horizontalSpacer, 3, 0, 1, 1)
 
-        self.h_5 = QPushButton(self.frame_5)
-        self.h_5.setObjectName(u"h_5")
-        self.h_5.setMinimumSize(QSize(90, 66))
-        self.h_5.setMaximumSize(QSize(90, 66))
+        self.btn_h_5 = QPushButton(self.frame_5)
+        self.btn_h_5.setObjectName(u"btn_h_5")
+        self.btn_h_5.setMinimumSize(QSize(90, 66))
+        self.btn_h_5.setMaximumSize(QSize(90, 66))
 
-        self.gridLayout.addWidget(self.h_5, 3, 2, 1, 1)
+        self.gridLayout.addWidget(self.btn_h_5, 3, 2, 1, 1)
 
-        self.h_4 = QPushButton(self.frame_5)
-        self.h_4.setObjectName(u"h_4")
-        self.h_4.setMinimumSize(QSize(90, 66))
-        self.h_4.setMaximumSize(QSize(90, 66))
+        self.btn_h_4 = QPushButton(self.frame_5)
+        self.btn_h_4.setObjectName(u"btn_h_4")
+        self.btn_h_4.setMinimumSize(QSize(90, 66))
+        self.btn_h_4.setMaximumSize(QSize(90, 66))
 
-        self.gridLayout.addWidget(self.h_4, 3, 1, 1, 1)
+        self.gridLayout.addWidget(self.btn_h_4, 3, 1, 1, 1)
 
         self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Preferred)
 
         self.gridLayout.addItem(self.verticalSpacer_5, 0, 1, 1, 1)
 
-        self.h_9 = QPushButton(self.frame_5)
-        self.h_9.setObjectName(u"h_9")
-        self.h_9.setMinimumSize(QSize(90, 66))
-        self.h_9.setMaximumSize(QSize(90, 66))
+        self.btn_h_9 = QPushButton(self.frame_5)
+        self.btn_h_9.setObjectName(u"btn_h_9")
+        self.btn_h_9.setMinimumSize(QSize(90, 66))
+        self.btn_h_9.setMaximumSize(QSize(90, 66))
 
-        self.gridLayout.addWidget(self.h_9, 4, 3, 1, 1)
+        self.gridLayout.addWidget(self.btn_h_9, 4, 3, 1, 1)
 
-        self.h_3 = QPushButton(self.frame_5)
-        self.h_3.setObjectName(u"h_3")
-        self.h_3.setMinimumSize(QSize(90, 66))
-        self.h_3.setMaximumSize(QSize(90, 66))
+        self.btn_h_3 = QPushButton(self.frame_5)
+        self.btn_h_3.setObjectName(u"btn_h_3")
+        self.btn_h_3.setMinimumSize(QSize(90, 66))
+        self.btn_h_3.setMaximumSize(QSize(90, 66))
 
-        self.gridLayout.addWidget(self.h_3, 2, 3, 1, 1)
+        self.gridLayout.addWidget(self.btn_h_3, 2, 3, 1, 1)
 
-        self.h_7 = QPushButton(self.frame_5)
-        self.h_7.setObjectName(u"h_7")
-        self.h_7.setMinimumSize(QSize(90, 66))
-        self.h_7.setMaximumSize(QSize(90, 66))
+        self.btn_h_7 = QPushButton(self.frame_5)
+        self.btn_h_7.setObjectName(u"btn_h_7")
+        self.btn_h_7.setMinimumSize(QSize(90, 66))
+        self.btn_h_7.setMaximumSize(QSize(90, 66))
 
-        self.gridLayout.addWidget(self.h_7, 4, 1, 1, 1)
+        self.gridLayout.addWidget(self.btn_h_7, 4, 1, 1, 1)
 
-        self.h_8 = QPushButton(self.frame_5)
-        self.h_8.setObjectName(u"h_8")
-        self.h_8.setMinimumSize(QSize(90, 66))
-        self.h_8.setMaximumSize(QSize(90, 66))
+        self.btn_h_8 = QPushButton(self.frame_5)
+        self.btn_h_8.setObjectName(u"btn_h_8")
+        self.btn_h_8.setMinimumSize(QSize(90, 66))
+        self.btn_h_8.setMaximumSize(QSize(90, 66))
 
-        self.gridLayout.addWidget(self.h_8, 4, 2, 1, 1)
+        self.gridLayout.addWidget(self.btn_h_8, 4, 2, 1, 1)
 
-        self.h_1 = QPushButton(self.frame_5)
-        self.h_1.setObjectName(u"h_1")
-        self.h_1.setMinimumSize(QSize(90, 66))
-        self.h_1.setMaximumSize(QSize(90, 66))
+        self.btn_h_1 = QPushButton(self.frame_5)
+        self.btn_h_1.setObjectName(u"btn_h_1")
+        self.btn_h_1.setMinimumSize(QSize(90, 66))
+        self.btn_h_1.setMaximumSize(QSize(90, 66))
 
-        self.gridLayout.addWidget(self.h_1, 2, 1, 1, 1)
+        self.gridLayout.addWidget(self.btn_h_1, 2, 1, 1, 1)
 
-        self.h_0 = QPushButton(self.frame_5)
-        self.h_0.setObjectName(u"h_0")
-        self.h_0.setMinimumSize(QSize(90, 66))
-        self.h_0.setMaximumSize(QSize(90, 66))
+        self.btn_h_0 = QPushButton(self.frame_5)
+        self.btn_h_0.setObjectName(u"btn_h_0")
+        self.btn_h_0.setMinimumSize(QSize(90, 66))
+        self.btn_h_0.setMaximumSize(QSize(90, 66))
 
-        self.gridLayout.addWidget(self.h_0, 5, 1, 1, 1)
+        self.gridLayout.addWidget(self.btn_h_0, 5, 1, 1, 1)
 
         self.haceptar_btn = QPushButton(self.frame_5)
         self.haceptar_btn.setObjectName(u"haceptar_btn")
@@ -1956,19 +1956,19 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addWidget(self.horometro_tbx, 1, 1, 1, 3)
 
-        self.h_2 = QPushButton(self.frame_5)
-        self.h_2.setObjectName(u"h_2")
-        self.h_2.setMinimumSize(QSize(90, 66))
-        self.h_2.setMaximumSize(QSize(90, 66))
+        self.btn_h_2 = QPushButton(self.frame_5)
+        self.btn_h_2.setObjectName(u"btn_h_2")
+        self.btn_h_2.setMinimumSize(QSize(90, 66))
+        self.btn_h_2.setMaximumSize(QSize(90, 66))
 
-        self.gridLayout.addWidget(self.h_2, 2, 2, 1, 1)
+        self.gridLayout.addWidget(self.btn_h_2, 2, 2, 1, 1)
 
-        self.h_6 = QPushButton(self.frame_5)
-        self.h_6.setObjectName(u"h_6")
-        self.h_6.setMinimumSize(QSize(90, 66))
-        self.h_6.setMaximumSize(QSize(90, 66))
+        self.btn_h_6 = QPushButton(self.frame_5)
+        self.btn_h_6.setObjectName(u"btn_h_6")
+        self.btn_h_6.setMinimumSize(QSize(90, 66))
+        self.btn_h_6.setMaximumSize(QSize(90, 66))
 
-        self.gridLayout.addWidget(self.h_6, 3, 3, 1, 1)
+        self.gridLayout.addWidget(self.btn_h_6, 3, 3, 1, 1)
 
         self.verticalSpacer_6 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Preferred)
 
@@ -2148,7 +2148,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2156,7 +2156,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.titleLeftApp.setText(QCoreApplication.translate("MainWindow", u"PyDracula", None))
+        self.titleLeftApp.setText(QCoreApplication.translate("MainWindow", u"Kanban Python", None))
         self.titleLeftDescription.setText(QCoreApplication.translate("MainWindow", u"Modern GUI / Flat Style", None))
         self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
@@ -2267,18 +2267,18 @@ class Ui_MainWindow(object):
         self.radioButton_13.setText(QCoreApplication.translate("MainWindow", u"OK", None))
         self.pregunta_11.setText("")
         self.horometro_btn.setText(QCoreApplication.translate("MainWindow", u"Siguiente", None))
-        self.h_5.setText(QCoreApplication.translate("MainWindow", u"5", None))
-        self.h_4.setText(QCoreApplication.translate("MainWindow", u"4", None))
-        self.h_9.setText(QCoreApplication.translate("MainWindow", u"9", None))
-        self.h_3.setText(QCoreApplication.translate("MainWindow", u"3", None))
-        self.h_7.setText(QCoreApplication.translate("MainWindow", u"7", None))
-        self.h_8.setText(QCoreApplication.translate("MainWindow", u"8", None))
-        self.h_1.setText(QCoreApplication.translate("MainWindow", u"1", None))
-        self.h_0.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.btn_h_5.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.btn_h_4.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.btn_h_9.setText(QCoreApplication.translate("MainWindow", u"9", None))
+        self.btn_h_3.setText(QCoreApplication.translate("MainWindow", u"3", None))
+        self.btn_h_7.setText(QCoreApplication.translate("MainWindow", u"7", None))
+        self.btn_h_8.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.btn_h_1.setText(QCoreApplication.translate("MainWindow", u"1", None))
+        self.btn_h_0.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.haceptar_btn.setText(QCoreApplication.translate("MainWindow", u"ACEPTAR", None))
         self.hborrar_btn.setText(QCoreApplication.translate("MainWindow", u"BORRAR", None))
-        self.h_2.setText(QCoreApplication.translate("MainWindow", u"2", None))
-        self.h_6.setText(QCoreApplication.translate("MainWindow", u"6", None))
+        self.btn_h_2.setText(QCoreApplication.translate("MainWindow", u"2", None))
+        self.btn_h_6.setText(QCoreApplication.translate("MainWindow", u"6", None))
         self.label.setText("")
         self.label_2.setText("")
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"HOROMETRO:", None))

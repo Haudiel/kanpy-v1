@@ -1,7 +1,8 @@
 import psutil
 import pyodbc
 from PySide6.QtGui import QPixmap
-from PySide6.QtWidgets import QMessageBox, QHeaderView, QTableWidgetItem
+from PySide6.QtWidgets import QHeaderView, QTableWidgetItem, QMessageBox
+from modules.notification_widget import NotificationWidget
 
 def connect_to_database():
     server = '172.19.128.18'
@@ -22,8 +23,8 @@ def close_database_connection(conn):
     except Exception as e:
         print(f"Error while closing the database connection: {str(e)}")
 
-def handle_error(widgets, message):
-    QMessageBox.critical(widgets, "Error", f"Ocurrió un error: {message}")
+def handle_error(notification_widget, message):
+    notification_widget.show_notification(f"Error: {message}")
 
 def populate_table(widgets, resultado):
     num_filas = 11
@@ -74,16 +75,22 @@ def Obtener_Empleado(widgets):
                     widgets.motrec_btn.setVisible(True)
                     widgets.vehiculos_tbl.setVisible(True)
                 else:
-                    QMessageBox.warning(widgets, "Resultado de la Consulta",
-                                        f"El empleado {empleado_id} tiene datos de imagen no válidos.")
+                    error_message = f"El empleado {empleado_id} tiene datos de imagen no válidos."
+                    notification_widget = NotificationWidget(error_message)
+                    notification_widget.show()
             else:
-                QMessageBox.warning(widgets, "Resultado de la Consulta",
-                                    f"El empleado {empleado_id} no tiene una imagen asociada.")
+                error_message = f"El empleado {empleado_id} no tiene una imagen asociada."
+                notification_widget = NotificationWidget(error_message)
+                notification_widget.show()
+
         else:
-            QMessageBox.warning(widgets, "Resultado de la Consulta",
-                                f"No se encontró ningún empleado con el número {empleado_id}")
+            error_message = f"No se encontró ningún empleado con el número {empleado_id}"
+            notification_widget = NotificationWidget(error_message)
+            notification_widget.show()
     except Exception as e:
-        handle_error(widgets, str(e))
+        error_message = "Ocurrió un error: " + str(e)
+        notification_widget = NotificationWidget(error_message)
+        notification_widget.show()
     finally:
         close_database_connection(conn)
 

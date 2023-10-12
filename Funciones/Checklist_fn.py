@@ -1,6 +1,7 @@
 import pyodbc
 from PySide6.QtWidgets import QMessageBox
 
+valores_seleccionados = [None] * 15
 
 def connect_to_database():
     server = '172.19.128.18'
@@ -41,7 +42,23 @@ def Obtener_checklist(widgets):
     finally:
         close_database_connection(conn)
 
-def radio_button_clicked(button):
+def radio_button_clicked(widgets, group_index, button):
+    group_name = f'Q{group_index}'
+    selected_value = button.text()  # Aquí obtienes el valor del botón seleccionado
+    valores_seleccionados[group_index - 1] = selected_value
+
     # Identificar en qué grupo se encuentra el botón seleccionado
     group_name = button.group().objectName()
     print(f"Botón seleccionado en el Grupo {group_name}: {button.text()}")
+
+    todos_seleccionados = all(
+        getattr(widgets, f'Q{group_index}').checkedButton() is not None
+        for group_index in range(1, 16)
+    )
+
+    # Muestra u oculta el botón "horometro_btn"
+    widgets.horometro_btn.setVisible(todos_seleccionados)
+
+def guardar_valores():
+    print("Valores seleccionados:", valores_seleccionados)
+

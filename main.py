@@ -43,9 +43,9 @@ import psutil
 import pyodbc
 from modules import *
 from modules import Settings
-from Funciones.Login_fn import Obtener_Empleado, Obtener_vehiculos, Obtener_estado_bateria, Guardar_itemSelected, ObtenerLicencias
+from Funciones.Login_fn import Obtener_Empleado, Obtener_vehiculos, ObtenerLicencias,Obtener_estado_bateria, Guardar_itemSelected
 from Funciones.Monitores_fn import Obtener_monitores
-from Funciones.Checklist_fn import Obtener_checklist, radio_button_clicked
+from Funciones.Checklist_fn import Obtener_checklist, radio_button_clicked, guardar_valores
 from widgets import *
 os.environ["QT_FONT_DPI"] = "96"
 
@@ -121,24 +121,23 @@ class MainWindow(QMainWindow):
         widgets.bateria_lbl.setText(f"Bateria: {bateria}")
 
         # 9.7 RADIO BUTTONS
-        widgets.Q1.buttonClicked.connect(radio_button_clicked)
-        widgets.Q2.buttonClicked.connect(radio_button_clicked)
-        widgets.Q3.buttonClicked.connect(radio_button_clicked)
-        widgets.Q4.buttonClicked.connect(radio_button_clicked)
-        widgets.Q5.buttonClicked.connect(radio_button_clicked)
-        widgets.Q6.buttonClicked.connect(radio_button_clicked)
-        widgets.Q7.buttonClicked.connect(radio_button_clicked)
-        widgets.Q8.buttonClicked.connect(radio_button_clicked)
-        widgets.Q9.buttonClicked.connect(radio_button_clicked)
-        widgets.Q10.buttonClicked.connect(radio_button_clicked)
-        widgets.Q11.buttonClicked.connect(radio_button_clicked)
-        widgets.Q12.buttonClicked.connect(radio_button_clicked)
-        widgets.Q13.buttonClicked.connect(radio_button_clicked)
-        widgets.Q14.buttonClicked.connect(radio_button_clicked)
-        widgets.Q15.buttonClicked.connect(radio_button_clicked)
+        for group_index in range(1, 16):
+            group_name = f'Q{group_index}'
+            button_group = getattr(widgets, group_name, None)
+            if button_group:
+                button_group.buttonClicked.connect(lambda button, widgets=widgets, group_index=group_index: radio_button_clicked(widgets, group_index, button))
 
         # 9.8 HOROMETRO
+        for i in range(10):
+                    button_name = f'btn_h_{i}'
+                    button = getattr(widgets, button_name, None)
+                    if button:
+                        button.clicked.connect(self.buttonClick)
+        widgets.horometro_btn.setVisible(False)
         widgets.horometro_btn.clicked.connect(self.buttonClick)
+        widgets.horometro_btn.clicked.connect(guardar_valores)
+        widgets.haceptar_btn.clicked.connect(self.buttonClick)
+        widgets.hborrar_btn.clicked.connect(self.buttonClick)
 
         # 10. EXTRA LEFT BOX
         def openCloseLeftBox():
@@ -207,6 +206,18 @@ class MainWindow(QMainWindow):
         if btnName == "horometro_btn":
             widgets.stackedWidget.setCurrentWidget(widgets.horometro_page)
 
+        if btnName.startswith("btn_h"):
+            number = btnName.split("_")[-1]
+            current_text = widgets.horometro_tbx.text()
+            widgets.horometro_tbx.setText(current_text + number)
+
+        if btnName == 'hborrar_btn':
+            widgets.horometro_tbx.clear()
+
+        if btnName == "haceptar_btn":
+            horometro = widgets.horometro_tbx.text()
+            print(horometro)
+
         print(f'Button "{btnName}" pressed!')
 
     # 17. RESIZE EVENTS
@@ -222,6 +233,9 @@ class MainWindow(QMainWindow):
             print('Mouse click: LEFT CLICK')
         if event.buttons() == Qt.RightButton:
             print('Mouse click: RIGHT CLICK')
+
+    def handle_error(self, message):
+        QMessageBox.critical(self, "Error", f"Ocurrió un error: {message}")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
