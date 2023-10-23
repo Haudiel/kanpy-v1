@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'main.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.5.3
+## Created by: Qt User Interface Compiler version 6.6.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -595,7 +595,6 @@ class Ui_MainWindow(object):
         font1 = QFont()
         font1.setFamilies([u"Segoe UI Semibold"])
         font1.setPointSize(12)
-        font1.setBold(False)
         font1.setItalic(False)
         self.titleLeftApp.setFont(font1)
         self.titleLeftApp.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
@@ -2001,6 +2000,18 @@ class Ui_MainWindow(object):
         self.gridLayout_2.addWidget(self.label_3, 0, 0, 1, 1)
 
         self.stackedWidget.addWidget(self.horometro_page)
+        self.kanpy_page = QWidget()
+        self.kanpy_page.setObjectName(u"kanpy_page")
+        self.tableWidget = QTableWidget(self.kanpy_page)
+        self.tableWidget.setObjectName(u"tableWidget")
+        self.tableWidget.setGeometry(QRect(10, 10, 961, 441))
+        self.label_4 = QLabel(self.kanpy_page)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(10, 460, 49, 16))
+        self.label_5 = QLabel(self.kanpy_page)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(10, 500, 49, 16))
+        self.stackedWidget.addWidget(self.kanpy_page)
 
         self.verticalLayout_15.addWidget(self.stackedWidget)
 
@@ -2148,7 +2159,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(4)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2282,6 +2293,8 @@ class Ui_MainWindow(object):
         self.label.setText("")
         self.label_2.setText("")
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"HOROMETRO:", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"Print", None))
         self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"Logout", None))

@@ -46,12 +46,17 @@ from modules import Settings
 from Funciones.Login_fn import Obtener_Empleado, Obtener_vehiculos, ObtenerLicencias,Obtener_estado_bateria, Guardar_itemSelected
 from Funciones.Monitores_fn import Obtener_monitores
 from Funciones.Checklist_fn import Obtener_checklist, radio_button_clicked, guardar_valores
+from Funciones.Checklist_fn import valores_seleccionados
+from Funciones.Horometro_fn import insert_data
+import time
+from datetime import datetime, time as timer
 from widgets import *
+
 os.environ["QT_FONT_DPI"] = "96"
 
 # 2. WIDGETS GLOBAL
 widgets = None
-
+vehiculo = None
 class MainWindow(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
@@ -62,6 +67,9 @@ class MainWindow(QMainWindow):
         widgets = self.ui
 
         self.selected_item = None
+
+        self.checklist_start_time = None
+        self.horometro_start_time = None
 
         # 3. BARRA DE TITULO | USAR "FALSE" PARA MAC OR LINUX
         Settings.ENABLE_CUSTOM_TITLE_BAR = True
@@ -102,6 +110,7 @@ class MainWindow(QMainWindow):
         widgets.motrec_btn.clicked.connect(self.buttonClick)
         widgets.vehiculos_tbl.setVisible(False)
         widgets.vehiculos_tbl.itemClicked.connect(lambda item: Guardar_itemSelected(widgets, item))
+        widgets.vehiculos_tbl.itemClicked.connect(lambda item: process_selected_item(item, widgets))
 
         # 9.3 MONITORES
         widgets.monitores_btn.clicked.connect(self.buttonClick)
@@ -133,11 +142,15 @@ class MainWindow(QMainWindow):
                     button = getattr(widgets, button_name, None)
                     if button:
                         button.clicked.connect(self.buttonClick)
+
         widgets.horometro_btn.setVisible(False)
         widgets.horometro_btn.clicked.connect(self.buttonClick)
         widgets.horometro_btn.clicked.connect(guardar_valores)
         widgets.haceptar_btn.clicked.connect(self.buttonClick)
         widgets.hborrar_btn.clicked.connect(self.buttonClick)
+
+        # 9.9 KANPY PAGE
+
 
         # 10. EXTRA LEFT BOX
         def openCloseLeftBox():
@@ -165,6 +178,12 @@ class MainWindow(QMainWindow):
         # 15. SET HOME PAGE AND SELECT MENU
         widgets.stackedWidget.setCurrentWidget(widgets.home)
         widgets.btn_home.setStyleSheet(UIFunctions.selectMenu(widgets.btn_home.styleSheet()))
+
+        def process_selected_item(item, widgets):
+            global vehiculo
+            vehiculo = Guardar_itemSelected(widgets, item)
+            # Now, you have the selected item in the 'vehiculo' variable
+            print(f'Selected item: {vehiculo}')
 
 
     # 16. FUNCION DE BUTTON CLICK
@@ -200,11 +219,15 @@ class MainWindow(QMainWindow):
 
         # 16.4 BOTONES CHECKLIST
         if btnName == "checklist_btn":
+            self.checklist_start_time = time.time()
             widgets.stackedWidget.setCurrentWidget(widgets.checklist_page)
+
 
         # 16.5 BOTONES HOROMETRO
         if btnName == "horometro_btn":
+            self.horometro_start_time = time.time()
             widgets.stackedWidget.setCurrentWidget(widgets.horometro_page)
+
 
         if btnName.startswith("btn_h"):
             number = btnName.split("_")[-1]
@@ -215,8 +238,57 @@ class MainWindow(QMainWindow):
             widgets.horometro_tbx.clear()
 
         if btnName == "haceptar_btn":
+            # DURACION
+            tiempo_transcurrido = self.horometro_start_time - self.checklist_start_time
+            tiempo_horas = int(tiempo_transcurrido // 3600)
+            tiempo_minutos = int((tiempo_transcurrido % 3600) // 60)
+            tiempo_segundos = int(tiempo_transcurrido % 60)
+
+            Duracion = f"{tiempo_horas:02}:{tiempo_minutos:02}:{tiempo_segundos:02}"
+
+            # TURNO
+            hora_actual = datetime.now().time()
+            hora_limite_1 = timer(6, 0)  # 6:00 AM
+            hora_limite_2 = timer(14, 0)  # 2:00 PM
+            hora_limite_3 = timer(21, 30)  # 9:30 PM
+            if hora_limite_1 <= hora_actual < hora_limite_2:
+                Turno = 1
+            elif hora_limite_2 <= hora_actual < hora_limite_3:
+                Turno = 2
+            else:
+                Turno = 3
+
+            # NUMERO CHOFER
+            Chofer = widgets.employeeID_tbx.text()
+
+            print(f"AQUI", vehiculo)
+
             horometro = widgets.horometro_tbx.text()
-            print(horometro)
+            AlarmaReversa = valores_seleccionados[0]
+            AsientoCinturon = valores_seleccionados[1]
+            Extintor = valores_seleccionados[2]
+            Claxon = valores_seleccionados[3]
+            ProteccionPila = valores_seleccionados[4]
+            FrenoMano = valores_seleccionados[5]
+            FrenoPedal = valores_seleccionados[6]
+            Fugas = valores_seleccionados[7]
+            ParrillaMastilCuchillas = valores_seleccionados[8]
+            Llantas = valores_seleccionados[9]
+            Luces = valores_seleccionados[10]
+            Palancas = valores_seleccionados[11]
+            Retrovisor = valores_seleccionados[12]
+            GanchoMotrec = valores_seleccionados[13]
+            TableroMontacargas = valores_seleccionados[14]
+
+            if FrenoMano == "NOK" or FrenoPedal == "NOK" or Fugas == "NOK" or GanchoMotrec == "NOK":
+                PuedeCircular = 0
+            else:
+                PuedeCircular = 1
+
+            insert_data(Chofer, PuedeCircular, vehiculo, Turno, Duracion, AlarmaReversa, AsientoCinturon, Extintor, Claxon, ProteccionPila, FrenoMano, FrenoPedal, Fugas, ParrillaMastilCuchillas, Llantas, Luces, Palancas, Retrovisor, GanchoMotrec, TableroMontacargas, horometro,"", "", "", "", "")
+            print(AlarmaReversa, AsientoCinturon, Extintor, Claxon, ProteccionPila, FrenoMano, FrenoPedal, Fugas, ParrillaMastilCuchillas, Llantas, Luces, Palancas, Retrovisor, GanchoMotrec, TableroMontacargas)
+            print(Duracion)
+            widgets.stackedWidget.setCurrentWidget(widgets.kanpy_page)
 
         print(f'Button "{btnName}" pressed!')
 

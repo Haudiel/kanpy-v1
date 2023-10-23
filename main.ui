@@ -684,7 +684,7 @@ Button */
                <family>Segoe UI Semibold</family>
                <pointsize>12</pointsize>
                <italic>false</italic>
-               <bold>false</bold>
+               <fontweight></fontweight>
               </font>
              </property>
              <property name="text">
@@ -1687,7 +1687,7 @@ Button */
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>0</number>
+                      <number>4</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <layout class="QGridLayout" name="gridLayout_9">
@@ -3792,6 +3792,44 @@ Button */
                        </item>
                       </layout>
                      </widget>
+                     <widget class="QWidget" name="kanpy_page">
+                      <widget class="QTableWidget" name="tableWidget">
+                       <property name="geometry">
+                        <rect>
+                         <x>10</x>
+                         <y>10</y>
+                         <width>961</width>
+                         <height>441</height>
+                        </rect>
+                       </property>
+                      </widget>
+                      <widget class="QLabel" name="label_4">
+                       <property name="geometry">
+                        <rect>
+                         <x>10</x>
+                         <y>460</y>
+                         <width>49</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string>TextLabel</string>
+                       </property>
+                      </widget>
+                      <widget class="QLabel" name="label_5">
+                       <property name="geometry">
+                        <rect>
+                         <x>10</x>
+                         <y>500</y>
+                         <width>49</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string>TextLabel</string>
+                       </property>
+                      </widget>
+                     </widget>
                     </widget>
                    </item>
                   </layout>
@@ -4143,20 +4181,20 @@ Button */
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="Q11"/>
-  <buttongroup name="Q5"/>
-  <buttongroup name="Q8"/>
-  <buttongroup name="Q7"/>
+  <buttongroup name="Q15"/>
   <buttongroup name="Q2"/>
+  <buttongroup name="Q3"/>
+  <buttongroup name="Q7"/>
+  <buttongroup name="Q13"/>
+  <buttongroup name="Q14"/>
+  <buttongroup name="Q8"/>
+  <buttongroup name="Q6"/>
+  <buttongroup name="Q9"/>
+  <buttongroup name="Q5"/>
   <buttongroup name="Q4"/>
   <buttongroup name="Q10"/>
-  <buttongroup name="Q13"/>
-  <buttongroup name="Q15"/>
   <buttongroup name="Q12"/>
-  <buttongroup name="Q6"/>
   <buttongroup name="Q1"/>
-  <buttongroup name="Q14"/>
-  <buttongroup name="Q9"/>
-  <buttongroup name="Q3"/>
+  <buttongroup name="Q11"/>
  </buttongroups>
 </ui>

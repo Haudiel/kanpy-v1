@@ -135,13 +135,18 @@ def Guardar_itemSelected(widgets, item):
     if isinstance(item, QTableWidgetItem):
         # Guardar el elemento seleccionado en la variable
         widgets.selected_item = item.text()
+
+        vehiculo = widgets.selected_item
+        print("vehiculooos", vehiculo)
         print(f'Elemento seleccionado: {widgets.selected_item}')
 
         # Habilitar el botón checklist_btn
         widgets.monitores_btn.setVisible(True)
+        return vehiculo
     else:
         # No se seleccionó ningún elemento, deshabilitar el botón
         widgets.monitores_btn.setVisible(False)
+        return None
 
 def ObtenerLicencias(widgets):
     empleado_id = widgets.employeeID_tbx.text()
